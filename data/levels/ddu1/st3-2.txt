@@ -1,0 +1,125 @@
+music		data/music/arrange/dd2st3.ogg
+
+background	data/bgs/airplane/3-2b2.gif
+panel		data/bgs/airplane/3-2p2.gif
+#frontpanel	data/bgs/ddragonx/stage3-1/f01.gif
+order	a
+
+rock            1
+bgspeed         1
+direction       both
+#-------1
+
+group   1 4
+at      0
+
+spawn    Jeff
+health   150
+map      4
+coords   -50 170
+at       0
+
+spawn    Jeff
+health   150
+#map      2
+coords   -50 190
+at       0
+
+spawn    Jeff
+health   150
+map      2
+coords   350 210
+at       0
+
+spawn    Jeff
+health   150
+map      5
+coords   350 230
+at       0
+
+#-------2
+
+group   1 4
+at      0
+
+spawn    mcguire
+#map      1
+item     mbox
+coords   -30 170
+at       0
+
+spawn    matrix1
+
+coords   -5 190
+at       0
+
+spawn    matrix1
+coords   350 210
+at       0
+
+spawn    matrix1
+
+coords   350 230
+at       0
+
+group   1 5
+at      0
+
+spawn    williams
+map      6
+coords   -30 180
+at       0
+
+spawn    Roper
+map      5
+coords   -30 190
+at       0
+
+spawn    steve
+health   150
+#map      5
+coords   -40 200
+at       0
+
+spawn    Roper3
+map      1
+item     knife2
+coords   350 200
+at       0
+
+spawn    williams
+map      4
+coords   350 230
+at       0
+
+group   1 3
+at      0
+
+spawn    abore
+map      2
+coords   360 190
+at       0
+
+spawn    abore
+map      2
+coords   360 190
+at       0
+
+
+
+spawn    ninja
+#map      1
+item     knife2
+coords   -30 200
+at       0
+
+
+
+#-------3
+
+
+
+
+
+
+

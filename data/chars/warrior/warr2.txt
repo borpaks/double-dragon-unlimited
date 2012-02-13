@@ -1,0 +1,170 @@
+name	?
+health	5
+speed	8
+type	enemy
+shadow	1
+cantgrab 1
+diesound   data/sounds/die1.wav
+icon	   data/chars/misc/empty.gif
+
+jumpheight 3
+
+anim idle
+	loop	1
+	delay	10
+	offset	68 135
+	bbox	55 73 29 62
+	frame	data/chars/warrior/idle.gif
+
+
+anim walk
+	loop	1
+	delay	13
+	offset	68 135
+	bbox	55 73 29 62
+	frame	data/chars/warrior/wk1.gif
+	frame	data/chars/warrior/wk2.gif
+	frame	data/chars/warrior/wk3.gif
+	frame	data/chars/warrior/wk4.gif
+	frame	data/chars/warrior/wk1.gif
+	frame	data/chars/warrior/wk2.gif
+	frame	data/chars/warrior/wk3.gif
+	frame	data/chars/warrior/wk4.gif
+	frame	data/chars/warrior/wk1.gif
+	frame	data/chars/warrior/wk2.gif
+	frame	data/chars/warrior/wk3.gif
+	frame	data/chars/warrior/wk4.gif
+	delay   5
+	frame	data/chars/warrior/tel4.gif
+	frame	data/chars/warrior/tel3.gif
+	frame	data/chars/warrior/tel2.gif
+	frame	data/chars/warrior/tel1.gif
+	delay   100
+	frame	data/chars/warrior/tel5.gif	
+	delay   5
+	frame	data/chars/warrior/tel1.gif
+	frame	data/chars/warrior/tel2.gif
+	frame	data/chars/warrior/tel3.gif
+	frame	data/chars/warrior/tel4.gif
+
+
+anim attack1
+	loop	0
+	delay	8
+	offset	68 135
+	bbox	55 73 29 62
+	frame	data/chars/warrior/idle.gif
+	frame	data/chars/warrior/a101.gif
+	attack  78 80 41 22 5
+	frame	data/chars/warrior/a102.gif
+	attack  0 0 0 0 0
+	frame	data/chars/warrior/a101.gif
+	attack  78 80 41 22 5
+	frame	data/chars/warrior/a103.gif
+	attack  0 0 0 0 0
+	frame	data/chars/warrior/a101.gif
+	attack  78 80 41 22 5
+	frame	data/chars/warrior/a102.gif
+	attack  0 0 0 0 0
+	frame	data/chars/warrior/a101.gif
+	attack  78 80 41 22 5
+	frame	data/chars/warrior/a103.gif
+	attack  0 0 0 0 0
+	frame	data/chars/warrior/a101.gif
+	frame	data/chars/warrior/ju1.gif
+	frame	data/chars/warrior/ju2.gif
+	attack  78 80 41 22 7 1	
+	delay   15
+	frame	data/chars/warrior/ju3.gif
+	delay   10
+	attack  0 0 0 0 0 0
+	frame	data/chars/warrior/ju2.gif	
+	frame	data/chars/warrior/ju1.gif
+
+
+anim jumpattack
+	loop	0
+	delay   3
+	offset	68 135
+	bbox	55 73 29 62
+	frame	data/chars/warrior/sp01.gif
+	attack  35 63 77 30 15 1
+	frame	data/chars/warrior/sp02.gif
+	frame	data/chars/warrior/sp03.gif
+	frame	data/chars/warrior/sp04.gif
+	frame	data/chars/warrior/sp01.gif
+	frame	data/chars/warrior/sp02.gif
+	frame	data/chars/warrior/sp03.gif
+	frame	data/chars/warrior/sp04.gif
+	frame	data/chars/warrior/sp01.gif
+	frame	data/chars/warrior/sp02.gif
+	frame	data/chars/warrior/sp03.gif
+	frame	data/chars/warrior/sp04.gif
+	frame	data/chars/warrior/sp01.gif
+	frame	data/chars/warrior/sp02.gif
+	frame	data/chars/warrior/sp03.gif
+	frame	data/chars/warrior/sp04.gif
+	frame	data/chars/warrior/sp01.gif
+	frame	data/chars/warrior/sp02.gif
+	frame	data/chars/warrior/sp03.gif
+	frame	data/chars/warrior/sp04.gif
+
+
+anim grab
+	loop	0
+	delay	15
+	offset	68 135
+	bbox	55 73 29 62
+	frame	data/chars/warrior/idle.gif
+	delay   3
+	frame	data/chars/warrior/sp01.gif
+	attack  35 63 77 30 15 1
+	frame	data/chars/warrior/sp02.gif
+	frame	data/chars/warrior/sp03.gif
+	frame	data/chars/warrior/sp04.gif
+	frame	data/chars/warrior/sp01.gif
+	frame	data/chars/warrior/sp02.gif
+	frame	data/chars/warrior/sp03.gif
+	frame	data/chars/warrior/sp04.gif
+	frame	data/chars/warrior/sp01.gif
+	frame	data/chars/warrior/sp02.gif
+	frame	data/chars/warrior/sp03.gif
+	frame	data/chars/warrior/sp04.gif
+	frame	data/chars/warrior/sp01.gif
+	frame	data/chars/warrior/sp02.gif
+	frame	data/chars/warrior/sp03.gif
+	frame	data/chars/warrior/sp04.gif
+	attack  0 0 0 0 0 0
+	delay   15
+	frame	data/chars/warrior/idle.gif
+
+
+anim pain
+	loop	0
+	delay	10
+	bbox	55 73 29 62
+	offset	68 135
+	frame	data/chars/warrior/pain1.gif
+        delay   35
+	frame	data/chars/warrior/pain2.gif
+
+
+anim fall
+	loop	0
+	offset	68 135
+	delay   60
+        attack  46 87 26 30 5 1
+	frame	data/chars/warrior/fall1.gif
+        delay   20
+        attack  0 0 0 0 0
+	frame	data/chars/warrior/fall2.gif
+	frame	data/chars/warrior/fall3.gif
+
+
+anim rise
+	loop	0
+	delay	20
+	offset	68 135
+	frame	data/chars/warrior/rise.gif
+
+

@@ -1,0 +1,59 @@
+music		data/music/remix.ogg
+bossmusic	data/music/arrange/dd2armas.ogg
+background	data/bgs/japan/b3-3p.gif
+panel		data/bgs/japan/b3-3p.gif
+#frontpanel	data/bgs/ddragonx/stage3-1/f01.gif
+order	a
+
+
+
+
+
+#-------1
+
+group   1 1
+at      0
+
+spawn    raymond
+health   200
+
+coords   256 154
+at       0
+
+
+#-------2
+
+group   5 5
+at      0
+
+spawn   raymond
+health   350
+boss     1
+coords   160 120
+at       0
+
+spawn    raymond
+
+health   150
+coords   66 120
+at       0
+
+spawn    raymond
+
+health   150
+coords   108 120
+at       0
+
+
+spawn    raymond
+
+health   150
+coords   256 120
+at       0
+
+spawn    raymond
+
+health   150
+coords   213 120
+at       0
+

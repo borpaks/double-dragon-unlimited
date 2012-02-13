@@ -1,0 +1,12 @@
+name	1up
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/empty.gif
+
+anim idle
+	loop	0
+	delay	1000
+	offset	63 135
+	bbox	59 78 15 57
+	frame	data/chars/misc/1up.gif

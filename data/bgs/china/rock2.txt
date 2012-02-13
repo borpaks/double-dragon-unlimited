@@ -1,0 +1,17 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	rock2
+health	1
+type	obstacle
+shadow	0
+
+
+
+anim idle
+	delay	1000
+	offset	10 42
+	bbox	0
+	frame	data/bgs/china/st2rock2.gif
+
+

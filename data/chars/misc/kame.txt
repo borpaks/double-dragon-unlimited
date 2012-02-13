@@ -1,0 +1,19 @@
+name	Kame
+health	1
+type	obstacle
+shadow	0
+#icon	data/chars/misc/drumicon.gif
+diesound data/sounds/phone.wav
+nolife        1
+
+anim idle
+	delay	100
+	offset	24 43
+	bbox	6 0 38 42 
+	frame	data/chars/misc/kame.gif
+
+
+anim fall
+	delay	1000
+	offset	30 42
+	frame	data/chars/misc/kame2.gif

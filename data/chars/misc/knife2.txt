@@ -1,0 +1,19 @@
+name	 Knife2
+health   0
+type     item
+subtype  weapon
+counter  999
+shootnum 1
+weapnum  1
+remove   1
+nolife   1
+weaploss 2
+
+anim idle
+	loop   1
+	offset 12 16
+	bbox   5 8 14 8
+	frame  data/chars/misc/knife1.gif
+
+
+

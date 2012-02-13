@@ -1,0 +1,228 @@
+name	Ninja
+health	100
+speed	13
+type	enemy
+shadow	1
+#cantgrab    1
+diesound data/sounds/die7.wav
+paingrab 1
+icon	data/chars/ninja/icon.gif
+nolife        1
+remap   data/chars/ninja/idle.gif   data/chars/ninja/alter1.gif
+candamage player npc
+hostile player npc
+jumpheight 3
+
+load     knife
+
+anim idle
+	loop	1
+	delay	10
+	offset	69 137
+	bbox	57 83 23 55
+	frame	data/chars/ninja/idle.gif
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	70 141
+	bbox	57 83 23 55
+	frame	data/chars/ninja/wk2.gif
+	frame	data/chars/ninja/wk3.gif
+	frame	data/chars/ninja/wk4.gif
+	frame	data/chars/ninja/wk1.gif
+	frame	data/chars/ninja/wk2.gif
+	frame	data/chars/ninja/wk3.gif
+	frame	data/chars/ninja/wk4.gif
+	frame	data/chars/ninja/wk1.gif
+	frame	data/chars/ninja/wk2.gif
+	frame	data/chars/ninja/wk3.gif
+	frame	data/chars/ninja/wk4.gif
+	frame	data/chars/ninja/wk1.gif
+	frame	data/chars/ninja/wk2.gif
+	frame	data/chars/ninja/wk3.gif
+	frame	data/chars/ninja/wk4.gif
+	frame	data/chars/ninja/wk1.gif
+	delay   11
+	frame	data/chars/ninja/cr1.gif
+	frame	data/chars/ninja/cr2.gif
+	frame	data/chars/ninja/cr3.gif
+	frame	data/chars/ninja/cr4.gif
+	frame	data/chars/ninja/cr5.gif
+	frame	data/chars/ninja/cr6.gif
+
+
+anim attack1
+	range   0 40
+	loop	0
+	delay	13
+	offset	69 137
+	bbox	57 83 23 55
+	frame	data/chars/ninja/a101.gif
+	attack  82 87 31 17 15 
+	frame	data/chars/ninja/a102.gif
+	attack  0 0 0 0 0 0
+	delay   13
+	frame	data/chars/ninja/a103.gif
+	frame	data/chars/ninja/a101.gif
+	attack  82 87 31 17 15 1
+	frame	data/chars/ninja/a102.gif
+	attack  0 0 0 0 0 0
+	delay   20
+	frame	data/chars/ninja/a103.gif
+
+
+anim attack2
+	range   120 150
+	loop	0
+	delay	10
+	offset	69 137
+	bbox	57 83 23 55
+	move    4
+	delay   2
+	sound   data/sounds/chin1.wav
+	frame	data/chars/ninja/cr1.gif
+	frame	data/chars/ninja/cr1.gif
+	frame	data/chars/ninja/cr1.gif
+	frame	data/chars/ninja/cr2.gif
+	frame	data/chars/ninja/cr2.gif
+	frame	data/chars/ninja/cr2.gif
+	frame	data/chars/ninja/cr3.gif
+	frame	data/chars/ninja/cr3.gif
+	frame	data/chars/ninja/cr3.gif
+	frame	data/chars/ninja/cr4.gif
+	frame	data/chars/ninja/cr4.gif
+	frame	data/chars/ninja/cr4.gif
+	frame	data/chars/ninja/cr5.gif
+	frame	data/chars/ninja/cr5.gif
+	frame	data/chars/ninja/cr5.gif
+	frame	data/chars/ninja/cr6.gif
+	frame	data/chars/ninja/cr6.gif
+	frame	data/chars/ninja/cr6.gif
+	attack  79 93 24 33 25 1
+	frame	data/chars/ninja/dash.gif
+	frame	data/chars/ninja/dash.gif
+	frame	data/chars/ninja/dash.gif
+	frame	data/chars/ninja/dash.gif
+	move    2
+	frame	data/chars/ninja/dash.gif
+	move    1
+	frame	data/chars/ninja/dash.gif
+	move    0
+	delay   15
+	frame	data/chars/ninja/dash.gif
+
+
+anim attack3
+	range   120 200
+	loop	0
+	delay	20
+	offset	69 137
+	bbox	57 83 23 55
+	throwframe  1
+	frame	data/chars/ninja/a101.gif
+	frame	data/chars/ninja/a102.gif
+	delay   20
+	frame	data/chars/ninja/a103.gif
+
+
+anim pain
+	loop	0
+	delay	8
+	offset	69 137
+	bbox	57 83 23 55
+	frame	data/chars/ninja/pain1.gif
+        
+
+anim pain3
+	loop	0
+	delay	15
+	offset	69 137
+	bbox	57 83 23 55
+	frame	data/chars/ninja/pain1.gif
+        delay  55
+	frame	data/chars/ninja/pain2.gif
+
+anim pain2
+	loop	0
+	delay	30
+	offset	42 183
+	bbox	52 70 20 61
+	jumpframe 0
+        frame	data/chars/ninja/fall2.gif
+        delay   17
+        frame	data/chars/ninja/fall1.gif
+
+anim pain4
+	 loop       0
+	 delay      2
+	 offset     62 133
+	 bbox       52 70 20 61
+	 move       -3
+         frame      data/chars/ninja/pain2.gif
+         frame      data/chars/ninja/pain2.gif
+         frame      data/chars/ninja/pain2.gif
+         frame      data/chars/ninja/pain2.gif
+	 move       0
+	 delay      50
+         frame      data/chars/ninja/pain2.gif
+
+anim jumpattack
+	loop	0
+	delay	12
+	offset	69 137
+	bbox	57 83 23 55
+	sound   data/sounds/chin1.wav
+	frame	data/chars/ninja/star1.gif
+	frame	data/chars/ninja/star2.gif
+	frame	data/chars/ninja/star3.gif
+	frame	data/chars/ninja/star4.gif
+	attack  59 95 28 38 18 1
+	frame	data/chars/ninja/star5.gif
+
+
+anim fall
+	loop	0
+	offset	69 137
+	delay   60
+        attack  42 95 5 10 5 1
+	frame	data/chars/ninja/fall1.gif
+        delay   20
+        attack  0 0 0 0 0
+	frame	data/chars/ninja/fall2.gif
+	frame	data/chars/ninja/fall3.gif
+
+anim fall2
+	loop	0
+	offset	69 137
+	delay   60
+        attack  48 95 25 22 5 1
+	bbox    42 108 46 23
+        jumpframe 0 4 0 0
+        move    -4
+        frame	data/chars/ninja/fall1.gif
+        delay   20
+        attack  0 0 0 0 0
+	frame	data/chars/ninja/fall2.gif
+	move    0
+        frame	data/chars/ninja/fall3.gif
+
+anim fall4
+	loop	0
+	offset	69 137
+	delay   60
+        bbox    42 108 46 23
+	frame	data/chars/ninja/fall1.gif
+        delay   20
+        attack  0 0 0 0 0
+	frame	data/chars/ninja/fall2.gif
+	frame	data/chars/ninja/fall3.gif
+
+anim rise
+	loop	0
+	delay	20
+	offset	69 137
+	frame	data/chars/ninja/rise.gif
+
+

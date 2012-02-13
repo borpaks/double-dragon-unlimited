@@ -1,0 +1,161 @@
+music		data/music/3-3.ogg
+bossmusic	data/music/3boss.ogg
+background	data/bgs/airplane/3-3b.gif
+panel		data/bgs/airplane/3-3p.gif
+order           a
+direction       right
+bgspeed         7
+spawn1 50 30
+
+wall 176 192 -300 -300 0 0 50 300
+wall 917 193 0 0 200 200 25 20 
+
+#-------1
+
+group   1 3
+at      0
+
+wait
+at       0
+
+spawn    burnov
+
+health   150
+coords   350 180
+at       0
+
+spawn    ninja
+alias    Roper
+item    knife2
+health   120
+coords   350 220
+at       0
+
+spawn    ninja
+alias    Roper
+item    knife2
+health   120
+coords   380 200
+at       0
+
+
+
+wait
+at       0
+
+#-------2
+
+group    1 4
+at       250
+
+wait
+at       250
+
+spawn    Williams
+map      4
+health   60
+coords   -30 180
+at       250
+
+spawn    linda3
+#map      1
+item     bomb1
+health   60
+coords   -30 220
+at       250
+
+spawn    jeff
+map      4
+health   150
+coords   380 200
+at       250
+
+spawn    jeff
+map      5
+health   150
+coords   380 220
+at       250
+
+wait
+at       200
+
+#-------3
+
+
+
+
+#--------4
+
+group    1 3
+at       0
+
+wait
+at       500
+
+
+
+
+
+spawn    ninja
+
+health   100
+item    knife2
+coords   380 200
+at       0
+
+spawn    ninja
+health   100
+map      2
+item    knife2
+coords   400 200
+at       0
+
+spawn    Steve
+
+health   180
+map      2
+coords   400 230
+at       0
+
+
+
+group    1 2
+at       800
+
+wait
+at       800
+
+spawn    carlem
+map      1
+health   200
+coords   380 230
+at       800
+
+spawn    carlem
+map      1
+health   200
+coords   400 200
+at       800
+
+group    1 1
+at       800
+
+spawn    Duke
+health   400
+boss     1
+coords   350 230
+at       800
+
+
+
+
+
+
+
+
+
+
+
+
+
+

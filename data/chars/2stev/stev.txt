@@ -1,0 +1,437 @@
+name          Steve
+type          enemy
+subtype       chase
+health        100
+speed         9
+jumpheight    4
+grabdistance  10
+throw         2 3
+throwdamage   18
+blockodds     1
+thold         50
+shadow        0
+noquake       1
+nolife        1
+risetime      30
+paingrab      1
+diesound      data/sounds/die1.wav
+#projectilehit enemy obstacle
+candamage player npc
+hostile player npc
+remap    data/chars/2stev/idle01.gif   data/chars/2stev/map1.gif
+
+anim spawn
+	 loop       0
+	 delay      1
+	 offset     56 94
+         bbox       46 40 22 51
+         frame      data/chars/2stev/idle.gif
+
+anim block
+	 loop       0
+	 delay      2
+	 offset     56 94
+	 bbox       46 40 22 51
+	 move       -6
+         frame      data/chars/2stev/block.gif
+         frame      data/chars/2stev/block.gif
+         frame      data/chars/2stev/block.gif
+         frame      data/chars/2stev/block.gif	
+	 delay      15
+	 move       0
+         frame      data/chars/2stev/block.gif
+
+anim idle
+	 loop       1
+	 delay      20
+	 offset     56 94
+	 bbox       46 40 22 51
+         frame      data/chars/2stev/idle.gif
+
+anim walk
+	 loop       1
+	 delay      15
+	 offset     56 94
+	 bbox       46 40 22 51
+         frame      data/chars/2stev/wk01.gif
+	 delay      20
+         frame      data/chars/2stev/wk02.gif
+	 delay      15
+         frame      data/chars/2stev/wk03.gif
+	 delay      20
+         frame      data/chars/2stev/wk04.gif
+
+anim up
+	 loop       1
+	 delay      15
+	 offset     56 94
+	 bbox       46 40 22 51
+         frame      data/chars/2stev/wk05.gif
+	 delay      20
+         frame      data/chars/2stev/wk06.gif
+	 delay      15
+         frame      data/chars/2stev/wk07.gif
+	 delay      20
+         frame      data/chars/2stev/wk08.gif
+
+anim attack1
+	 range      5 43
+	 loop       0
+	 delay      9
+	 offset     56 94
+	 bbox       46 40 22 51
+	 followanim 2
+	 followcond 3
+	 fastattack 1
+	 hitfx      data/sounds/beat1.wav
+         frame      data/chars/2stev/a101.gif
+	 delay      5
+         frame      data/chars/2stev/a102.gif
+	 delay      6
+	 attack     69 45 32 11 4 0 0 0 13
+         frame      data/chars/2stev/a103.gif
+	 delay      12
+	 attack     0 0 0 0
+         frame      data/chars/2stev/a201.gif
+
+anim follow2
+	 loop       0
+	 delay      9
+	 offset     56 94
+	 bbox       46 40 22 51
+	 fastattack 1
+	 jumpframe  6 2
+	 sound      data/sounds/beat1.wav
+	 attack     0 0 0 0
+         frame      data/chars/2stev/a103.gif
+	 delay      5
+	 attack     0 0 0 0
+         frame      data/chars/2stev/a201.gif
+	 delay      7
+	 attack9    69 45 32 11 7 0 0 0 13
+         frame      data/chars/2stev/a202.gif
+	 delay      5
+	 attack9    0 0 0 0
+         frame      data/chars/2stev/a102.gif
+	 delay      24
+         frame      data/chars/2stev/idle.gif
+	 delay      10
+         frame      data/chars/2stev/b101.gif
+	 delay      7
+         frame      data/chars/2mat1/ju1.gif
+         frame      data/chars/2stev/ju2.gif
+	 delay      15
+	 attack     62 51 36 18 8 1 0 0 13
+         frame      data/chars/2stev/ju3.gif
+	 delay      8
+	 attack     0 0 0 0 
+         frame      data/chars/2stev/ju4.gif
+	 delay      18
+         frame      data/chars/2stev/rise.gif
+
+anim attack2
+	 range      44 65
+	 loop       0
+	 delay      10
+	 offset     56 94
+	 bbox       46 40 22 51
+	 jumpframe  1 2
+         frame      data/chars/2stev/rise.gif
+	 delay      7
+         frame      data/chars/2stev/ju1.gif
+         frame      data/chars/2stev/ju2.gif
+	 delay      15
+	 attack     62 51 36 18 8 1 0 0 13
+         frame      data/chars/2stev/ju3.gif
+	 delay      8
+	 attack     0 0 0 0 
+         frame      data/chars/2stev/ju4.gif
+	 delay      18
+         frame      data/chars/2stev/rise.gif
+
+anim riseattack
+	 range      10 46
+	 loop       0
+	 delay      10
+	 offset     56 94
+	 bbox       0 0 0 0
+	 delay      5
+         frame      data/chars/2stev/b101.gif
+         frame      data/chars/2stev/b102.gif
+	 delay      8
+	 attack2    0 0 0 0
+         frame      data/chars/2stev/b103.gif
+	 delay      20
+         frame      data/chars/2stev/b104.gif
+	 delay      6
+	 attack5    73 45 35 23 4 0 1 0 13
+         frame      data/chars/2stev/b105.gif
+	 attack5    0 0 0 0
+         frame      data/chars/2stev/b106.gif
+	 delay      25
+         frame      data/chars/2stev/idle.gif
+
+anim upper
+	 range      0 65
+	 loop       0
+	 delay      10
+	 offset     56 94
+	 bbox       0 0 0 0
+	 delay      5
+         frame      data/chars/2stev/b101.gif
+         frame      data/chars/2stev/b102.gif
+	 delay      8
+	 attack2    0 0 0 0
+         frame      data/chars/2stev/b103.gif
+	 delay      20
+         frame      data/chars/2stev/b104.gif
+	 delay      6
+	 attack5    73 45 35 23 4 0 1 0 13
+         frame      data/chars/2stev/b105.gif
+	 attack5    0 0 0 0
+         frame      data/chars/2stev/b106.gif
+	 delay      25
+         frame      data/chars/2stev/idle.gif
+
+anim grabbed
+	 loop       0
+	 delay      5
+	 offset     54 94
+	 bbox       45 36 22 56
+         frame      data/chars/2stev/gp3.gif
+         frame      data/chars/2stev/gp1.gif
+
+anim spain
+	 loop       0
+	 delay      15
+	 offset     54 94
+	 bbox       45 36 22 56
+         frame      data/chars/2stev/gp2.gif
+	 delay      8
+         frame      data/chars/2stev/gp3.gif
+
+anim bpain
+	 loop       0
+	 delay      1
+	 offset     54 94
+	 jumpframe  1 2
+	 move       1
+         frame      data/chars/2stev/fall5.gif
+	 delay      2
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+	 move       0
+	 delay      65
+#        sound      data/sounds/fall.wav
+         frame      data/chars/2stev/fall7.gif
+	 delay      13
+         frame      data/chars/2stev/rise.gif
+
+anim burn
+	 loop       0
+	 delay      50
+	 offset     54 94
+         frame      data/chars/2stev/fall5.gif
+	 delay      10
+         frame      data/chars/2stev/fall2.gif
+         frame      data/chars/2stev/fall3.gif
+         frame      data/chars/2stev/fall4.gif
+
+anim pain
+	 loop       0
+	 delay      8
+	 offset     56 94
+	 bbox       46 40 22 51
+         frame      data/chars/2stev/pain1.gif
+
+anim pain2
+	 loop       0
+	 delay      32
+	 offset     36 134
+	 bbox       20 60 70 51
+         jumpframe  0
+         frame      data/chars/2stev/fall3.gif
+	 move       0
+	 delay      50
+         frame      data/chars/2stev/fall2.gif
+
+
+
+
+anim pain3
+	 loop       0
+	 delay      8
+	 offset     56 94
+	 bbox       46 40 22 51
+         frame      data/chars/2stev/pain2.gif 
+         delay      40
+         frame      data/chars/2stev/pain3.gif 
+
+anim pain4
+	 loop       0
+	 delay      2
+	 offset     56 94
+	 bbox       52 70 20 61
+	 move       -3
+         frame      data/chars/2stev/pain3.gif
+         frame      data/chars/2stev/pain3.gif
+         frame      data/chars/2stev/pain3.gif
+         frame      data/chars/2stev/pain3.gif
+	 move       0
+	 delay      50
+         frame      data/chars/2stev/pain3.gif
+
+
+anim pain6
+	 loop       0
+	 delay      2
+	 offset     56 94
+	 bbox       46 40 22 51
+	 move       -6
+	 attack     46 38 12 51 5 1 0 0 8
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+	 move       -4
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+	 move       -2
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+	 move       -1
+	 attack     0 0 0 0
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/fall5.gif
+         frame      data/chars/2stev/rise.gif
+         frame      data/chars/2stev/rise.gif
+         frame      data/chars/2stev/rise.gif
+         frame      data/chars/2stev/rise.gif
+         frame      data/chars/2stev/rise.gif
+	 move       0
+	 delay      40
+	 bbox       0 0 0 0
+         frame      data/chars/2stev/rise.gif
+
+anim pain5
+	 loop       0
+	 delay      52
+	 offset     56 94
+	 bbox       46 40 22 51
+         frame      data/chars/2stev/pain3.gif
+
+anim fall
+	 loop       0
+	 delay      50
+	 offset     56 94
+	 attack     35 52 5 10 5 1 0 0 13
+         frame      data/chars/2stev/fall1.gif
+	 delay      10
+         frame      data/chars/2stev/fall2.gif
+	 attack     0 0 0 0
+         frame      data/chars/2stev/fall3.gif
+         frame      data/chars/2stev/fall4.gif
+
+anim fall2
+	 loop       0
+	 delay      50
+	 offset     56 94
+	 attack     40 52 32 30 5 1 0 0 13
+         bbox       40 52 32 30
+         jumpframe 0 4 0 0
+         move       -4
+         frame      data/chars/2stev/fall1.gif
+	 delay      10
+         frame      data/chars/2stev/fall2.gif
+	 attack     0 0 0 0
+         frame      data/chars/2stev/fall3.gif
+         move       0
+         frame      data/chars/2stev/fall4.gif
+
+anim fall4
+	 loop       0
+	 delay      50
+	 offset     56 94
+	 bbox       40 52 32 30
+         frame      data/chars/2stev/fall1.gif
+	 delay      10
+         frame      data/chars/2stev/fall2.gif
+	 attack     0 0 0 0
+         frame      data/chars/2stev/fall3.gif
+         frame      data/chars/2stev/fall4.gif
+
+anim fall6
+	 loop       0
+	 delay      10
+	 offset     56 94
+	 bbox       46 42 28 32
+	 attack     40 37 39 44 5 1 1 0 8
+         frame      data/chars/2stev/fall8.gif
+         frame      data/chars/2stev/fall9.gif
+         frame      data/chars/2stev/falla.gif
+         frame      data/chars/2stev/fall1.gif
+         frame      data/chars/2stev/fall8.gif
+         frame      data/chars/2stev/fall9.gif
+         frame      data/chars/2stev/falla.gif
+         frame      data/chars/2stev/fall1.gif
+	 attack     0 0 0 0
+	 bbox       0 0 0 0
+         frame      data/chars/2stev/fall2.gif
+         frame      data/chars/2stev/fall3.gif
+         frame      data/chars/2stev/fall4.gif
+
+anim fall7
+	 loop       0
+	 delay      1
+	 offset     56 94
+	 bbox       46 40 22 51
+	 jumpframe  1 5
+	 flipframe  1
+         frame      data/chars/2stev/fall1.gif
+	 delay      49
+         frame      data/chars/2stev/fall1.gif
+         frame      data/chars/2stev/fall2.gif
+	 delay      25
+         frame      data/chars/2stev/fall3.gif
+	 bbox       0 0 0 0
+         frame      data/chars/2stev/fall4.gif
+
+anim rise
+	 loop       0
+	 delay      20
+	 offset     56 94
+         frame      data/chars/2stev/fall4.gif
+         frame      data/chars/2stev/rise.gif
+
+

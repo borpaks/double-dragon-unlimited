@@ -1,0 +1,29 @@
+#music		Data/music/remix/dd2st3.bor
+#bossmusic	data/music/arcade/abore.bor
+background	data/bgs/park/1-3b.gif
+panel		data/bgs/park/1-3p.gif
+#frontpanel	data/bgs/ddragonx/stage3-1/f01.gif
+order	a
+bgspeed  1
+
+
+
+
+#-------1
+
+
+
+spawn	GOB
+coords	255 205
+flip	1
+at	0
+
+spawn	GOA
+coords	255 155
+flip	1
+at	0
+
+
+
+
+

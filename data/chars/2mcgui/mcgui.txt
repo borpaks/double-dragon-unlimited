@@ -1,0 +1,428 @@
+name          McGuire
+type          enemy
+subtype       chase
+health        100
+speed         8
+jumpheight    3
+grabdistance  10
+throw         2 3
+throwdamage   18
+blockodds     1
+thold         70
+shadow        0
+noquake       1
+nolife        1
+risetime      50
+paingrab      1
+nodieblink    1
+falldie       2
+candamage player npc
+hostile player npc
+
+anim spawn
+	 loop       0
+	 delay      1
+	 offset     59 114
+	 bbox       44 45 32 66
+         frame      data/chars/2mcgui/wk04.gif
+
+anim block
+	 loop       0
+	 delay      2
+	 offset     59 114
+	 bbox       44 45 32 66
+	 move       -6
+         frame      data/chars/2mcgui/a102.gif
+         frame      data/chars/2mcgui/a102.gif
+         frame      data/chars/2mcgui/a102.gif
+         frame      data/chars/2mcgui/a102.gif
+	 move       0
+	 delay      15
+         frame      data/chars/2mcgui/a102.gif
+
+anim idle
+	 loop       1
+	 delay      10
+	 offset     59 114
+	 bbox       44 45 32 66
+         frame      data/chars/2mcgui/wk04.gif
+
+anim walk
+	 loop       1
+	 delay      15
+	 offset     59 114
+	 bbox       44 45 32 66
+         frame      data/chars/2mcgui/wk01.gif
+	 delay      20
+         frame      data/chars/2mcgui/wk02.gif
+	 delay      15
+         frame      data/chars/2mcgui/wk03.gif
+	 delay      20
+         frame      data/chars/2mcgui/wk04.gif
+
+anim attack1
+	 range      10 44
+	 loop       0
+	 delay      18
+	 offset     59 114
+	 bbox       44 45 32 66
+#	 sound      data/sounds/att4.wav
+         frame      data/chars/2mcgui/a101.gif
+	 delay      14
+	 attack     70 48 34 31 23 1 0 0 13
+         frame      data/chars/2mcgui/a102.gif
+	 delay      18
+	 attack     0 0 0 0
+         frame      data/chars/2mcgui/a103.gif
+
+anim attack2
+	 range      45 55
+	 loop       0
+	 delay      7
+	 offset     59 114
+	 bbox       44 45 32 66
+         frame      data/chars/2mcgui/a101.gif
+	 delay      2
+	 move       7
+         frame      data/chars/2mcgui/a201.gif
+	 frame      data/chars/2mcgui/a201.gif
+	 blast      71 42 27 68 18 1 0 13
+         frame      data/chars/2mcgui/a202.gif
+         frame      data/chars/2mcgui/a202.gif
+         frame      data/chars/2mcgui/a202.gif
+	 move       3
+         frame      data/chars/2mcgui/a202.gif
+         frame      data/chars/2mcgui/a202.gif
+	 move       1
+	 delay      15
+	 blast      0 0 0 0
+         frame      data/chars/2mcgui/a202.gif
+
+anim attack3
+	 range      70 150
+	 loop       0
+	 delay      10
+	 offset     59 114
+	 bbox       44 45 32 66
+#	 sound      data/sounds/att2.wav
+	 hitfx      data/sounds/beat3.wav
+         frame      data/chars/2mcgui/a102.gif
+	 delay      2
+	 move       7
+	 bbox       0 0 0 0
+	 attack     36 45 48 54 25 1 1 0 13
+         frame      data/chars/2mcgui/rl01.gif
+         frame      data/chars/2mcgui/rl02.gif
+         frame      data/chars/2mcgui/rl03.gif
+         frame      data/chars/2mcgui/rl04.gif
+         frame      data/chars/2mcgui/rl01.gif
+         frame      data/chars/2mcgui/rl02.gif
+         frame      data/chars/2mcgui/rl03.gif
+         frame      data/chars/2mcgui/rl04.gif
+         frame      data/chars/2mcgui/rl01.gif
+         frame      data/chars/2mcgui/rl02.gif
+         frame      data/chars/2mcgui/rl03.gif
+         frame      data/chars/2mcgui/rl04.gif
+         frame      data/chars/2mcgui/rl01.gif
+         frame      data/chars/2mcgui/rl02.gif
+         frame      data/chars/2mcgui/rl03.gif
+         frame      data/chars/2mcgui/rl04.gif
+         frame      data/chars/2mcgui/rl01.gif
+         frame      data/chars/2mcgui/rl02.gif
+         frame      data/chars/2mcgui/rl03.gif
+         frame      data/chars/2mcgui/rl04.gif
+         frame      data/chars/2mcgui/rl01.gif
+         frame      data/chars/2mcgui/rl02.gif
+         frame      data/chars/2mcgui/rl03.gif
+         frame      data/chars/2mcgui/rl04.gif
+	 attack     0 0 0 0
+	 move       3
+	 bbox       44 45 32 66
+         frame      data/chars/2mcgui/a202.gif
+         frame      data/chars/2mcgui/a202.gif
+         frame      data/chars/2mcgui/a202.gif
+	 move       1
+         frame      data/chars/2mcgui/a202.gif
+         frame      data/chars/2mcgui/a202.gif
+         frame      data/chars/2mcgui/a202.gif
+	 delay      20
+	 move       0
+         frame      data/chars/2mcgui/a202.gif
+
+anim riseattack
+	 range      10 55
+#	 loop       0
+#	 delay      7
+#	 offset     59 114
+#	 bbox       0 0 0 0
+#         frame      data/chars/2mcgui/a101.gif
+#	 delay      2
+#	 move       5
+#         frame      data/chars/2mcgui/a201.gif
+#	 frame      data/chars/2mcgui/a201.gif
+#	 blast      71 42 27 68 18 1 0 13
+#         frame      data/chars/2mcgui/a202.gif
+#         frame      data/chars/2mcgui/a202.gif
+#         frame      data/chars/2mcgui/a202.gif
+#	 move       2
+#         frame      data/chars/2mcgui/a202.gif
+#         frame      data/chars/2mcgui/a202.gif
+#	 move       1
+#	 delay      15
+#	 blast      0 0 0 0
+#         frame      data/chars/2mcgui/a202.gif
+         loop       0
+	 delay      10
+	 offset     59 114
+	 bbox       44 45 32 66
+#	 sound      data/sounds/att2.wav
+	 hitfx      data/sounds/beat3.wav
+         frame      data/chars/2mcgui/a102.gif
+	 jumpframe  1 3
+         delay      2
+	 move       7
+	 bbox       0 0 0 0
+	 attack     36 45 48 54 25 1 1 0 13
+         frame      data/chars/2mcgui/rl01.gif
+         frame      data/chars/2mcgui/rl02.gif
+         frame      data/chars/2mcgui/rl03.gif
+         frame      data/chars/2mcgui/rl04.gif
+         frame      data/chars/2mcgui/rl01.gif
+         frame      data/chars/2mcgui/rl02.gif
+         frame      data/chars/2mcgui/rl03.gif
+         frame      data/chars/2mcgui/rl04.gif
+         frame      data/chars/2mcgui/rl01.gif
+         frame      data/chars/2mcgui/rl02.gif
+         frame      data/chars/2mcgui/rl03.gif
+         frame      data/chars/2mcgui/rl04.gif
+         frame      data/chars/2mcgui/rl01.gif
+         frame      data/chars/2mcgui/rl02.gif
+         frame      data/chars/2mcgui/rl03.gif
+         frame      data/chars/2mcgui/rl04.gif
+
+	 offset     59 114 
+         delay      20
+         frame      data/chars/2mcgui/fall5.gif
+         delay      30
+	 offset     59 114
+         bbox       44 45 32 66
+         frame      data/chars/2mcgui/rise.gif
+
+
+anim upper
+	 range      0 60
+	 loop       0
+	 delay      5
+	 offset     59 114
+	 bbox       0 0 0 0
+	 counterframe  1 1 0
+	 followanim    2
+         frame      data/chars/2mcgui/a102.gif
+	 delay      60
+	 bbox       44 45 32 66
+         frame      data/chars/2mcgui/a102.gif
+
+anim follow2
+	 loop       0
+	 delay      2
+	 move       5
+	 offset     59 114
+	 bbox       0 0 0 0
+         frame      data/chars/2mcgui/a201.gif
+	 frame      data/chars/2mcgui/a201.gif
+	 blast      71 42 27 68 18 1 0 13
+         frame      data/chars/2mcgui/a202.gif
+         frame      data/chars/2mcgui/a202.gif
+         frame      data/chars/2mcgui/a202.gif
+	 move       2
+         frame      data/chars/2mcgui/a202.gif
+         frame      data/chars/2mcgui/a202.gif
+	 move       1
+	 delay      15
+	 blast      0 0 0 0
+         frame      data/chars/2mcgui/a202.gif
+
+anim bpain
+	 loop       0
+	 delay      1
+	 offset     59 114
+	 jumpframe  1 2
+	 move       1
+         frame      data/chars/2mcgui/fall5.gif
+	 delay      2
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+	 move       0
+	 delay      40
+	 sound      data/sounds/fall.wav
+         frame      data/chars/2mcgui/fall7.gif
+	 delay      18
+         frame      data/chars/2mcgui/rise.gif
+	 delay      2
+	 move       7
+	 bbox       0 0 0 0
+         frame      data/chars/2mcgui/rl01.gif
+         frame      data/chars/2mcgui/rl02.gif
+         frame      data/chars/2mcgui/rl03.gif
+         frame      data/chars/2mcgui/rl04.gif
+         frame      data/chars/2mcgui/rl01.gif
+         frame      data/chars/2mcgui/rl02.gif
+         frame      data/chars/2mcgui/rl03.gif
+         frame      data/chars/2mcgui/rl04.gif
+         frame      data/chars/2mcgui/rl01.gif
+         frame      data/chars/2mcgui/rl02.gif
+         frame      data/chars/2mcgui/rl03.gif
+         frame      data/chars/2mcgui/rl04.gif
+         frame      data/chars/2mcgui/rl01.gif
+         frame      data/chars/2mcgui/rl02.gif
+         frame      data/chars/2mcgui/rl03.gif
+         frame      data/chars/2mcgui/rl04.gif
+	 move       3
+         frame      data/chars/2mcgui/a202.gif
+         frame      data/chars/2mcgui/a202.gif
+	 move       1
+         frame      data/chars/2mcgui/a202.gif
+	 delay      20
+	 move       0
+         frame      data/chars/2mcgui/a202.gif
+
+anim burn
+	 loop       0
+	 delay      50
+	 offset     59 114
+         frame      data/chars/2mcgui/fall5.gif
+	 delay      10
+         frame      data/chars/2mcgui/fall2.gif
+         frame      data/chars/2mcgui/fall3.gif
+         frame      data/chars/2mcgui/fall4.gif
+
+anim pain
+	 loop       0
+	 delay      22
+	 offset     59 114
+	 bbox       44 45 32 66
+         frame      data/chars/2mcgui/pain1.gif
+
+anim pain2
+	 loop       0
+	 delay      50
+	 offset     19 170
+         jumpframe  0
+         bbox       22 53 74 60
+         frame      data/chars/2mcgui/fall3.gif
+
+anim pain3
+	 loop       0
+	 delay      22
+	 offset     59 114
+	 bbox       44 45 32 66
+         frame      data/chars/2mcgui/pain2.gif
+	 move       0
+	 delay      50
+         frame      data/chars/2mcgui/pain3.gif
+
+anim pain4
+	 loop       0
+	 delay      2
+	 offset     59 114
+	 bbox       44 45 32 66
+	 move       -4
+	 attack     46 38 12 51 5 1 0 0 8
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+        
+         
+	 move       -2
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+        
+	 move       -1
+	 attack     0 0 0 0
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/fall5.gif
+         frame      data/chars/2mcgui/rise.gif
+	 move       0
+	 delay      30
+         frame      data/chars/2mcgui/rise.gif
+
+anim pain5
+	 loop       0
+	 delay      52
+	 offset     59 114
+	 bbox       44 45 32 66
+         frame      data/chars/2mcgui/pain3.gif
+
+anim fall
+	 loop       0
+	 delay      50
+	 offset     59 114
+         frame      data/chars/2mcgui/fall1.gif
+	 delay      10
+         frame      data/chars/2mcgui/fall2.gif
+         frame      data/chars/2mcgui/fall3.gif
+         frame      data/chars/2mcgui/fall4.gif
+
+anim fall2
+	 loop       0
+	 delay      50
+	 offset     59 114
+         jumpframe  0 4 0 0
+         bbox       22 53 74 60
+         frame      data/chars/2mcgui/fall1.gif
+	 delay      40
+         frame      data/chars/2mcgui/fall2.gif
+         delay      10
+         frame      data/chars/2mcgui/fall3.gif
+         frame      data/chars/2mcgui/fall4.gif
+
+anim fall4
+	 loop       0
+	 delay      50
+	 offset     59 114
+         bbox       22 53 74 60
+         frame      data/chars/2mcgui/fall1.gif
+	 delay      10
+         frame      data/chars/2mcgui/fall2.gif
+         frame      data/chars/2mcgui/fall3.gif
+         frame      data/chars/2mcgui/fall4.gif
+
+anim rise
+	 loop       0
+	 delay      20
+	 offset     59 114
+         frame      data/chars/2mcgui/fall4.gif
+         frame      data/chars/2mcgui/rise.gif
+
+anim death
+	 loop       0
+	 delay      90
+	 offset     59 114
+	 bbox       0 0 0 0
+         frame      data/chars/2mcgui/rise.gif
+	 delay      130
+	 sound      data/sounds/die8.wav
+         frame      data/chars/2mcgui/pain3.gif
+	 delay      30
+         frame      data/chars/2mcgui/fall6.gif
+         frame      data/chars/2mcgui/fall7.gif
+
+

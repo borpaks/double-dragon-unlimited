@@ -1,0 +1,15 @@
+name	Shot
+health	1
+type	enemy
+shadow	0
+
+anim idle
+	loop	1
+	delay	3
+	offset	7 47
+	attack	7 3 19 12 20 1
+	frame	data/chars/misc/shot1.gif
+	frame	data/chars/misc/shot2.gif
+
+
+

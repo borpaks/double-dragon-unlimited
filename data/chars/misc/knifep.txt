@@ -1,0 +1,20 @@
+name	Knifep
+health	1
+type	pshot
+shadow	0
+#icon	data/chars/misc/meaticon.gif
+shootnum  1
+
+anim idle
+	loop	1
+	delay	2
+	offset	12 -10
+	attack	7 7 12 13 42 1
+	hitfx  data/sounds/swd.wav
+        hitflash Flashb
+        frame	data/chars/misc/knife1.gif
+	frame	data/chars/misc/knife2.gif
+	frame	data/chars/misc/knife3.gif
+	frame	data/chars/misc/knife4.gif
+
+

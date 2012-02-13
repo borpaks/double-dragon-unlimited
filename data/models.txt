@@ -1,0 +1,90 @@
+# List all character models to be loaded.
+# Syntax:
+# load		[name]		[path]		// Load on startup
+# know		[name]		[path]		// Load when needed
+# 
+colourselect 1
+
+# Required objects. These must always be loaded.
+load	Flash		data/chars/misc/flash.txt
+load	Flashb		data/chars/misc/flashb.txt
+
+# Players must also be loaded.
+load	Billy   	data/chars/1dragon/1dragon.txt
+#load	Y________	data/chars/2dragon/2dragon.txt
+load	power    	data/chars/3dragon/3dragon.txt
+load	power1    	data/chars/3dragon/power1.txt
+load	power2    	data/chars/3dragon/power2.txt
+load	jimmy	        data/chars/npc/jimmy.txt
+load	sonny	        data/chars/npc2/sonny.txt
+load	billy1  	data/chars/1dragon/billy1.txt
+load	billy2  	data/chars/1dragon/billy2.txt
+# Items and other objects can be loaded when needed.
+load    1up             data/chars/misc/1up.txt
+load	Knifep   	data/chars/misc/knifep.txt
+load	bombp   	data/chars/misc/bombp.txt
+# Obstacles (item containers)
+know	Drum   	        data/chars/misc/drum.txt
+know	Box   	        data/chars/misc/box.txt
+know	Kame   	        data/chars/misc/kame.txt
+know	Berry   	data/chars/misc/berry.txt
+know	Mbox   	        data/chars/misc/mbox.txt
+know	Rock   	        data/bgs/china/rock.txt
+know	Rock2   	data/bgs/china/rock2.txt
+know	Money   	data/chars/misc/money.txt
+know	Knife2   	data/chars/misc/knife2.txt
+know	bomb1    	data/chars/misc/bomb1.txt
+
+# Enemies
+#know	Dolg   	        data/chars/dolg/dolg.txt
+know	Linda   	data/chars/linda/linda.txt
+know	Linda2    	data/chars/linda/linda2.txt
+know	Linda3    	data/chars/linda/linda3.txt
+know	Chin    	data/chars/chin/chin.txt
+know	Williams	data/chars/williams/williams.txt
+know	Roper   	data/chars/Roper/Roper.txt
+know	Roper2   	data/chars/Roper/Roper2.txt
+know	Roper3  	data/chars/Roper/Roper3.txt
+know	Abore   	data/chars/abore/abore.txt
+know	Abobo	 	data/chars/abobo/abobo.txt
+know	Bolo	 	data/chars/bolo/bolo.txt
+know	Ninja   	data/chars/ninja/ninja.txt
+know	Mibobo   	data/chars/mibobo/mibobo.txt
+know	Abobo2	 	data/chars/abobo/abobo2.txt
+know	Burnov  	data/chars/burnov/burnov.txt
+know	Oharra   	data/chars/Oharra/oharra.txt
+know	Jeff    	data/chars/jeff/jeff.txt
+know	Doppelganger   	data/chars/2dragon/dopel.txt
+know	Willy   	data/chars/willy/willy.txt
+know	???     	data/chars/Warrior/warrior.txt
+know	?       	data/chars/Warrior/warr2.txt
+know	Duke            data/chars/2duke/duke.txt
+
+know	Steve           data/chars/2stev/stev.txt
+know	Hong   	        data/chars/Hong/Hong.txt
+know	Kikucho   	data/chars/Kikucho/Kikucho.txt
+know	Raymond   	data/chars/Raymond/Raymond.txt
+know	Matrix1       data/chars/2mat1/mat1.txt
+know	Carlem        data/chars/2carlem/carlem.txt
+#know	Carlem2       data/chars/2carlem/carlem2.txt
+know	McGuire       data/chars/2mcgui/mcgui.txt
+#know	McGuire2      data/chars/2mcgui/mcgui2.txt
+
+# Other stuff
+know	Knife		data/chars/misc/knife.txt
+know	Shot		data/chars/misc/shot.txt
+know	bomb    	data/chars/misc/bomb.txt
+know	Pillar		data/chars/statue/pillar.txt
+know	Spear		data/chars/spear/spear.txt
+know	Bulldozer	data/chars/bull/bull.txt
+know	Gong		data/chars/misc/gong.txt
+know	Heli		data/chars/heli/heli.txt
+know	ball1           data/chars/misc/ball1.txt
+
+know    GOA             data/chars/misc/go/goa.txt
+know    GOB             data/chars/misc/go/gob.txt
+
+
+
+
+

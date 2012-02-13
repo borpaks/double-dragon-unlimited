@@ -1,0 +1,175 @@
+#maxplayers 3
+set	Normal
+lives 3
+credits 5
+custfade 50
+#scene   data/scenes/intro1.txt
+scene   data/scenes/01.txt
+
+
+z       160 209
+file	Data/Levels/Ddu1/st1-1.txt
+
+z       130 206
+file	Data/Levels/Ddu1/st1-2.txt
+z       145 220
+file	Data/Levels/Ddu1/st1-3.txt
+file	Data/Levels/Ddu1/st1-3b.txt
+next
+
+
+branch	GOA
+scene   data/scenes/02.txt
+z       141 206
+file	Data/Levels/Ddu1/st2-1.txt
+z       118 162
+file	Data/Levels/Ddu1/st2-2.txt
+
+next
+scene   data/scenes/03.txt
+z       198 228
+file	Data/Levels/Ddu1/st3-1.txt
+z       135 250
+file	Data/Levels/Ddu1/st3-2.txt
+z       178 230
+file	Data/Levels/Ddu1/st3-3.txt
+scene   data/scenes/credits.txt
+#scene   data/scenes/sewer.txt
+
+END
+
+branch	GOB
+scene   data/scenes/04.txt
+z       123 240
+file	Data/Levels/Ddu1/stb2-1.txt
+z       110 240
+file	Data/Levels/Ddu1/stb2-2.txt
+next
+scene   data/scenes/05.txt
+z       137 218
+file	Data/Levels/Ddu1/stb3-1.txt
+z       127 210
+file	Data/Levels/Ddu1/stb3-2.txt
+z       97 235
+file	Data/Levels/Ddu1/stb3-3.txt
+scene   data/scenes/credits2.txt
+#scene   data/scenes/sewer.txt
+
+END
+
+
+set	Double_Dragon
+lives 3
+credits 3
+custfade 50
+#scene   data/scenes/intro1n.txt
+scene   data/scenes/01.txt
+
+z       160 209
+file	Data/Levels/Ddu2/st1-1.txt
+z       130 206
+file	Data/Levels/Ddu2/st1-2.txt
+z       145 220
+file	Data/Levels/Ddu2/st1-3.txt
+file	Data/Levels/Ddu2/st1-3b.txt
+next
+
+branch	GOA
+scene   data/scenes/02.txt
+z       141 206
+file	Data/Levels/Ddu2/st2-1.txt
+z       118 162
+file	Data/Levels/Ddu2/st2-2.txt
+
+next
+scene   data/scenes/03.txt
+z       198 228
+file	Data/Levels/Ddu2/st3-1.txt
+z       135 250
+file	Data/Levels/Ddu2/st3-2.txt
+z       178 230
+file	Data/Levels/Ddu2/st3-3.txt
+scene   data/scenes/credits.txt
+#scene   data/scenes/sewer.txt
+
+END
+
+branch	GOB
+scene   data/scenes/04.txt
+z       123 240
+file	Data/Levels/Ddu2/stb2-1.txt
+z       110 240
+file	Data/Levels/Ddu2/stb2-2.txt
+next
+scene   data/scenes/05.txt
+z       137 218
+file	Data/Levels/Ddu2/stb3-1.txt
+z       127 210
+file	Data/Levels/Ddu2/stb3-2.txt
+z       97 235
+file	Data/Levels/Ddu2/stb3-3.txt
+scene   data/scenes/credits2.txt
+#scene   data/scenes/sewer.txt
+
+END
+
+
+set	Triple_Dragon
+lives 4
+credits 1
+custfade 50
+#scene   data/scenes/intro1n.txt
+scene   data/scenes/01.txt
+ifcomplete 1
+z       160 209
+file	Data/Levels/Ddu3/st1-1.txt
+z       130 206
+file	Data/Levels/Ddu3/st1-2.txt
+z       145 220
+file	Data/Levels/Ddu3/st1-3.txt
+file	Data/Levels/Ddu3/st1-3b.txt
+next
+
+branch	GOA
+scene   data/scenes/02.txt
+z       141 206
+file	Data/Levels/Ddu3/st2-1.txt
+z       118 162
+file	Data/Levels/Ddu3/st2-2.txt
+
+next
+scene   data/scenes/03.txt
+z       198 228
+file	Data/Levels/Ddu3/st3-1.txt
+z       135 250
+file	Data/Levels/Ddu3/st3-2.txt
+z       178 230
+file	Data/Levels/Ddu3/st3-3.txt
+scene   data/scenes/credits.txt
+#scene   data/scenes/sewer.txt
+
+END
+
+branch	GOB
+scene   data/scenes/04.txt
+z       123 240
+file	Data/Levels/Ddu3/stb2-1.txt
+z       110 240
+file	Data/Levels/Ddu3/stb2-2.txt
+next
+scene   data/scenes/05.txt
+z       137 218
+file	Data/Levels/Ddu3/stb3-1.txt
+z       127 210
+file	Data/Levels/Ddu3/stb3-2.txt
+z       97 235
+file	Data/Levels/Ddu3/stb3-3.txt
+scene   data/scenes/credits2.txt
+#scene   data/scenes/sewer.txt
+
+END
+
+
+
+
+

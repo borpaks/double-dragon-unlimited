@@ -1,0 +1,215 @@
+name	Abobo2
+health	100
+speed	9
+type	enemy
+shadow	1
+paingrab 1
+grabdistance   28
+diesound data/sounds/die1.wav
+nolife        1
+icon	data/chars/abobo/icon.gif
+
+jumpheight 3 
+
+remap   data/chars/abobo/wk1.gif   data/chars/abobo/alter1.gif
+remap   data/chars/abobo/wk4.gif   data/chars/abobo/alter2.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	66 132
+	bbox	53 62 26 69
+	frame	data/chars/abobo/wk1.gif
+
+
+anim walk
+	loop	1
+	delay	15
+	offset	66 130
+	bbox	53 62 26 69
+	frame	data/chars/abobo/wk1.gif
+	offset	66 132
+	frame	data/chars/abobo/wk2.gif
+	frame	data/chars/abobo/wk3.gif
+	offset	66 130
+	frame	data/chars/abobo/wk4.gif
+
+
+anim attack1
+	range   0 30
+	loop	0
+	delay	7
+	offset	66 132
+	bbox	53 62 26 69
+	frame	data/chars/abobo/a101.gif
+	attack  74 71 38 25 12
+	delay   12
+	frame	data/chars/abobo/a102.gif
+	attack  0 0 0 0 0
+  	delay   7
+	frame	data/chars/abobo/a103.gif
+	attack  74 71 38 25 12
+	delay   12
+	frame	data/chars/abobo/a104.gif
+	attack  0 0 0 0 0
+	delay   7
+	frame	data/chars/abobo/a105.gif
+	frame	data/chars/abobo/a101.gif
+	attack  74 71 38 25 14 1
+	delay   12
+	frame	data/chars/abobo/a102.gif
+	delay   8
+	attack  0 0 0 0 0
+	frame	data/chars/abobo/a103.gif
+
+
+anim grab
+	range   0 30
+	loop	0
+	delay	8
+	offset	66 132
+	bbox	53 62 26 69
+	frame	data/chars/abobo/a101.gif
+	attack  74 71 38 25 10
+	delay   18
+	frame	data/chars/abobo/a102.gif
+	attack  0 0 0 0 0
+  	delay   8
+	frame	data/chars/abobo/a103.gif
+	frame	data/chars/abobo/a201.gif
+	frame	data/chars/abobo/a202.gif
+        attack  74 71 38 25 25 1
+        delay   22
+	frame	data/chars/abobo/a203.gif
+	attack  0 0 0 0 0 0
+	delay   10
+	frame	data/chars/abobo/a301.gif
+
+
+anim attack2
+	range   0 50
+	loop	0
+	delay	10
+	offset	66 132
+	bbox	53 62 26 69
+	frame	data/chars/abobo/a301.gif
+	frame	data/chars/abobo/a302.gif
+	frame	data/chars/abobo/a303.gif
+	attack  79 85 37 27 20 1
+	delay   20
+	frame	data/chars/abobo/a304.gif
+	attack  0 0 0 0 0 0
+	delay   10
+	frame	data/chars/abobo/a303.gif
+	frame	data/chars/abobo/a302.gif
+	frame	data/chars/abobo/a301.gif
+
+
+anim throw
+	loop	0
+	delay	10
+	offset	66 132
+	sound   data/sounds/abobo.wav
+	frame	data/chars/abobo/th1.gif
+	frame	data/chars/abobo/th2.gif
+	frame	data/chars/abobo/th3.gif
+        delay   23
+	frame	data/chars/abobo/th4.gif
+
+
+anim pain
+	loop	0
+	delay	18
+	offset	66 132
+	bbox	53 62 26 69
+	frame	data/chars/abobo/pain1.gif
+        delay   35
+	frame	data/chars/abobo/pain2.gif
+
+anim pain2
+	loop	0
+	delay	30
+	offset	42 183
+	bbox	52 70 20 61
+	jumpframe 0
+        frame	data/chars/abobo/fall3.gif
+        delay   17
+        frame	data/chars/abobo/fall2.gif
+
+anim pain3
+	loop	0
+	delay	18
+	offset	66 132
+	bbox	53 62 26 69
+	frame	data/chars/abobo/pain1.gif
+        delay   55
+	frame	data/chars/abobo/pain2.gif
+
+anim pain4
+	 loop       0
+	 delay      2
+	 offset     62 133
+	 bbox       52 70 20 61
+	 move       -3
+         frame      data/chars/abobo/pain2.gif
+         frame      data/chars/abobo/pain2.gif
+         frame      data/chars/abobo/pain2.gif
+         frame      data/chars/abobo/pain2.gif
+	 move       0
+	 delay      50
+         frame      data/chars/abobo/pain2.gif
+
+anim fall
+	loop	0
+	offset	66 132
+	delay   10
+        attack  58 71 13 35 5 1
+	frame	data/chars/abobo/fall1.gif
+	delay   50
+        attack  40 81 28 29 5 1
+	frame	data/chars/abobo/fall2.gif
+        delay   20
+        attack  0 0 0 0 0
+	frame	data/chars/abobo/fall3.gif
+	frame	data/chars/abobo/fall4.gif
+
+anim fall2
+	loop	0
+	offset	66 132
+	delay   10
+        attack  58 71 13 35 5 1
+	bbox    42 108 46 23
+        jumpframe 0 4 0 0
+        move    -8
+        frame	data/chars/abobo/fall1.gif
+	delay   50
+        attack  40 81 28 29 5 1
+	frame	data/chars/abobo/fall2.gif
+        delay   20
+        attack  0 0 0 0 0
+	frame	data/chars/abobo/fall3.gif
+	frame	data/chars/abobo/fall4.gif
+
+anim fall4
+	loop	0
+	offset	66 132
+	delay   10
+        bbox    42 108 46 23
+	frame	data/chars/abobo/fall1.gif
+	delay   50
+        
+	frame	data/chars/abobo/fall2.gif
+        delay   20
+        attack  0 0 0 0 0
+	frame	data/chars/abobo/fall3.gif
+	frame	data/chars/abobo/fall4.gif
+
+anim rise
+	loop	0
+	delay	20
+	offset	66 132
+	frame	data/chars/abobo/rise.gif
+
+
+
+

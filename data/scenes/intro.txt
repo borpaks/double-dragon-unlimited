@@ -1,0 +1,49 @@
+#	music		[path] [loop]		# BOR file to play
+#	animation	[path] [x] [y]		# GIF animation to play
+#	silence					# Stop music
+
+silence
+animation	data/scenes/introx/01.gif 0 0
+animation	data/scenes/introx/02.gif 0 0
+animation	data/scenes/introx/03.gif 0 0
+animation	data/scenes/introx/04.gif 0 0
+animation	data/scenes/introx/05.gif 0 0
+music	        data/music/remix.ogg 1
+animation	data/scenes/introx/06.gif 0 0
+animation	data/scenes/introx/07.gif 0 0
+animation	data/scenes/introx/08.gif 0 0
+animation	data/scenes/introx/09.gif 0 0
+animation	data/scenes/introx/10.gif 0 0
+animation	data/scenes/introx/07.gif 0 0
+animation	data/scenes/introx/08.gif 0 0
+animation	data/scenes/introx/09.gif 0 0
+animation	data/scenes/introx/10.gif 0 0
+animation	data/scenes/introx/07.gif 0 0
+animation	data/scenes/introx/08.gif 0 0
+animation	data/scenes/introx/09.gif 0 0
+animation	data/scenes/introx/10.gif 0 0
+animation	data/scenes/introx/07.gif 0 0
+animation	data/scenes/introx/08.gif 0 0
+animation	data/scenes/introx/09.gif 0 0
+animation	data/scenes/introx/10.gif 0 0
+animation	data/scenes/introx/11.gif 0 0
+animation	data/scenes/introx/07.gif 0 0
+animation	data/scenes/introx/11.gif 0 0
+animation	data/scenes/introx/08.gif 0 0
+animation	data/scenes/introx/11.gif 0 0
+animation	data/scenes/introx/09.gif 0 0
+animation	data/scenes/introx/11.gif 0 0
+animation	data/scenes/introx/10.gif 0 0
+animation	data/scenes/introx/11.gif 0 0
+animation	data/scenes/introx/07.gif 0 0
+animation	data/scenes/introx/11.gif 0 0
+animation	data/scenes/introx/08.gif 0 0
+animation	data/scenes/introx/11.gif 0 0
+animation	data/scenes/introx/09.gif 0 0
+animation	data/scenes/introx/11.gif 0 0
+animation	data/scenes/introx/10.gif 0 0
+animation	data/scenes/introx/12.gif 0 0
+animation	data/scenes/introx/13.gif 0 0
+
+
+

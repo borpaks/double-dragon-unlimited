@@ -1,0 +1,153 @@
+name	Willy
+health	100
+speed	8
+type	enemy
+shadow	1
+diesound data/sounds/die1.wav
+
+icon	data/chars/willy/icon.gif
+
+jumpheight 3 
+
+remap   data/chars/willy/wk1.gif   data/chars/willy/alter.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	62 131
+	bbox	50 71 27 60
+	frame	data/chars/willy/wk1.gif
+
+
+anim walk
+	loop	1
+	delay	15
+	offset	62 131
+	bbox	50 71 27 60
+	frame	data/chars/willy/wk2.gif
+	frame	data/chars/willy/wk3.gif
+	frame	data/chars/willy/wk4.gif
+	frame	data/chars/willy/wk1.gif
+
+
+anim attack1
+	range   0 30
+	loop	0
+	offset	62 131
+	bbox	50 71 27 60
+	delay   8
+	frame	data/chars/willy/a101.gif
+	attack  71 76 33 33 15
+	frame	data/chars/willy/a102.gif
+	attack  0 0 0 0 0
+	frame	data/chars/willy/a103.gif
+	delay   18
+	frame	data/chars/willy/a104.gif
+	delay   8
+	frame	data/chars/willy/a103.gif
+	attack  71 76 33 33 15
+	frame	data/chars/willy/a102.gif
+	attack  0 0 0 0 0
+	delay   18
+	frame	data/chars/willy/a101.gif
+	delay   8
+	attack  71 76 33 33 15 1
+	frame	data/chars/willy/a102.gif
+	attack  0 0 0 0 0
+	frame	data/chars/willy/a103.gif
+	delay   18
+	frame	data/chars/willy/a104.gif
+	frame	data/chars/willy/a103.gif
+
+
+anim attack2
+	range   0 40
+	loop	0
+	offset	62 131
+	bbox	50 71 27 60
+	delay   8
+	frame	data/chars/willy/a201.gif
+	attack  61 89 38 22 18
+	delay   18
+	frame	data/chars/willy/a202.gif
+	delay   8
+	attack  0 0 0 0 0
+	frame	data/chars/willy/a201.gif
+	delay   11
+	frame	data/chars/willy/a102.gif
+	delay   8
+	frame	data/chars/willy/a201.gif
+	attack  61 89 38 22 18 1
+	delay   18
+	frame	data/chars/willy/a202.gif
+	attack  0 0 0 0 0 0
+	delay   8
+	frame	data/chars/willy/a201.gif
+
+
+anim attack3
+	range   120 150
+	loop	0
+	offset	62 131
+	bbox	50 71 27 60
+	delay   20
+	frame	data/chars/willy/shot1.gif
+	delay   9
+	sound   data/sounds/gun.wav
+	attack  81 86 272 14 40 1
+	frame	data/chars/willy/shot2.gif
+	frame	data/chars/willy/shot1.gif
+	frame	data/chars/willy/shot2.gif
+	frame	data/chars/willy/shot1.gif
+	frame	data/chars/willy/shot2.gif
+	frame	data/chars/willy/shot1.gif
+	frame	data/chars/willy/shot2.gif
+	attack  81 86 400 14 40 1
+	frame	data/chars/willy/shot1.gif
+	frame	data/chars/willy/shot2.gif
+	frame	data/chars/willy/shot1.gif
+	frame	data/chars/willy/shot2.gif
+	frame	data/chars/willy/shot1.gif
+	frame	data/chars/willy/shot2.gif
+	frame	data/chars/willy/shot1.gif
+	frame	data/chars/willy/shot2.gif
+	frame	data/chars/willy/shot1.gif
+	frame	data/chars/willy/shot2.gif
+	attack  0 0 0 0 0 0
+	delay   20
+	frame	data/chars/willy/shot1.gif
+
+
+anim pain
+	loop	0
+	delay	18
+	offset	62 131
+	bbox	50 71 27 60
+	frame	data/chars/willy/pain1.gif
+        delay   35
+	frame	data/chars/willy/pain2.gif
+
+
+anim fall
+	loop	0
+	offset	62 131
+	delay   10
+        attack  36 84 31 34 5 1
+	frame	data/chars/willy/fall1.gif
+	delay   50
+        attack  40 81 28 29 5 1
+	frame	data/chars/willy/fall2.gif
+        delay   20
+        attack  0 0 0 0 0
+	frame	data/chars/willy/fall3.gif
+
+
+anim rise
+	loop	0
+	delay	20
+	offset	62 131
+	frame	data/chars/willy/rise.gif
+
+
+
+

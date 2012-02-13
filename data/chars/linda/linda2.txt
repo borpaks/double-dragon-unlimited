@@ -1,0 +1,168 @@
+name	Linda2
+health	50
+speed	9
+type	enemy
+shadow	1
+#cantgrab   1
+diesound data/sounds/eek.wav
+paingrab 1
+icon	data/chars/linda/icon.gif
+nolife        1
+jumpheight 3 
+candamage player npc
+hostile player npc
+
+anim idle
+	loop	1
+	delay	10
+	offset	63 132
+	bbox	53 74 19 58
+	frame	data/chars/linda/wkwp1.gif
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	63 132
+	bbox	53 74 19 58
+	frame	data/chars/linda/wkwp1.gif
+	frame	data/chars/linda/wkwp2.gif
+	frame	data/chars/linda/wkwp3.gif
+	frame	data/chars/linda/wkwp4.gif
+
+
+anim attack1
+        range   0 25
+	loop	0
+	delay	8
+	offset	63 132
+	bbox	53 74 19 58
+	sound   data/sounds/lasso.wav
+	frame	data/chars/linda/las1.gif
+	frame	data/chars/linda/las2.gif
+	attack  74 78 29 57 13
+	frame	data/chars/linda/las3.gif
+	attack  0 0 0 0 0
+	delay   15
+	frame	data/chars/linda/las4.gif
+
+
+anim attack2
+        range   0 40
+	loop	0
+	delay	8
+	offset	63 132
+	bbox	53 74 19 58
+	sound   data/sounds/lasso.wav
+	frame	data/chars/linda/las1.gif
+	frame	data/chars/linda/las2.gif
+	attack  73 77 35 58 17 1
+	frame	data/chars/linda/las3.gif
+	attack  0 0 0 0 0
+	delay   15
+	frame	data/chars/linda/las4.gif
+
+
+anim special
+        range   0 30
+	loop	0
+	delay	8
+	offset	63 132
+	bbox	53 74 19 58
+	frame	data/chars/linda/las1.gif
+	frame	data/chars/linda/las2.gif
+	attack  73 77 35 58 17 1
+	frame	data/chars/linda/las3.gif
+	attack  0 0 0 0 0
+	delay   15
+	frame	data/chars/linda/las4.gif
+
+
+anim pain
+	loop	0
+	delay	8
+	offset	63 132
+	bbox	53 74 19 58
+	frame	data/chars/linda/wppain1.gif
+        
+
+anim pain2
+	loop	0
+	delay	30
+	offset	42 183
+	bbox	52 70 20 61
+	jumpframe 0
+        frame	data/chars/linda/fall2.gif
+        delay   17
+        frame	data/chars/linda/fall1.gif
+
+anim pain3
+	loop	0
+	delay	23
+	offset	63 132
+	bbox	53 74 19 58
+	frame	data/chars/linda/wppain1.gif
+        delay   55
+	frame	data/chars/linda/wppain2.gif
+
+anim pain4
+	 loop       0
+	 delay      2
+	 offset     62 133
+	 bbox       52 70 20 61
+	 move       -3
+         frame      data/chars/linda/pain2.gif
+         frame      data/chars/linda/pain2.gif
+         frame      data/chars/linda/pain2.gif
+         frame      data/chars/linda/pain2.gif
+	 move       0
+	 delay      50
+         frame      data/chars/linda/pain2.gif
+
+anim fall
+	loop	0
+	offset	63 132
+	delay   60
+        attack  40 91 23 24 5 1
+	frame	data/chars/linda/wpfall1.gif
+        delay   20
+        attack  0 0 0 0 0
+	frame	data/chars/linda/wpfall2.gif
+	frame	data/chars/linda/wpfall3.gif
+
+
+
+anim fall2
+	loop	0
+	offset	63 132
+	delay   60
+        attack  40 91 23 24 5 1
+	jumpframe 0 4 0 0
+        bbox    42 108 46 23
+        move    -8
+        frame	data/chars/linda/fall1.gif
+        delay   20
+        attack  0 0 0 0 0
+	frame	data/chars/linda/fall2.gif
+	frame	data/chars/linda/fall3.gif
+
+anim fall4
+	loop	0
+	offset	63 132
+	delay   60
+        bbox    42 108 46 23
+	frame	data/chars/linda/wpfall1.gif
+        delay   20
+        attack  0 0 0 0 0
+	frame	data/chars/linda/wpfall2.gif
+	frame	data/chars/linda/wpfall3.gif
+
+anim rise
+	loop	0
+	delay	20
+	offset	63 132
+	frame	data/chars/linda/wprise.gif
+
+
+
+

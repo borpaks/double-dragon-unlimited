@@ -1,0 +1,127 @@
+music		data/music/arrange/dd2st1.ogg
+
+background	data/bgs/park/1-2b.gif
+panel		data/bgs/park/1-2p.gif
+#frontpanel	data/bgs/ddragon2/stage2-1/f01.gif
+order         a
+#blocked        1
+direction      right
+
+spawn1  70 65
+spawn2  90 65
+
+wall 29 210 -29 -29 64 0 46 300
+wall 140 177 -140 -140 0 0 60 300
+wall 190 208 0 40 1500 1500 52 30
+wall 178 160 0 0 1500 1500 100 300
+
+#-------2
+spawn	jimmy
+health  100
+flip    1
+map     1
+coords	129 179
+at      0
+
+
+group   3 3
+at      135
+
+spawn   Linda
+map     1
+health  40
+coords  380 160
+at      135
+
+spawn   Linda2
+alias   Linda
+health  40
+coords  400 170
+at      135
+
+wait
+at      300
+
+spawn   roper2
+alias   Roper
+map     1
+health  50
+coords  380 160
+at      135
+
+spawn   roper
+map      4
+health  50
+coords  380 170
+at      135
+
+#-------3
+
+group   4 4
+at      395
+
+spawn   Roper3
+alias   Roper
+item    knife2
+map     1
+health  50
+coords  380 170
+at      395
+
+spawn   Williams
+map     1
+health  50
+coords  380 160
+at      395
+
+spawn   Linda
+map     1
+health  45
+coords  -80 160
+at      395
+
+spawn   jeff
+alias   Roper
+#map     1
+health  80
+coords  -50 170
+at      395
+
+
+
+
+
+group    5 5
+at      500
+
+spawn   Roper3
+alias   Roper
+item    knife2
+map     1
+health  50
+coords  380 170
+at      500
+
+spawn   Williams
+map     1
+health  50
+coords  380 160
+at      500
+
+spawn   Linda
+map     1
+health  45
+coords  -80 160
+at      500
+
+spawn   jeff
+health  80
+#map     1
+coords  -50 160
+at      500
+
+spawn   burnov
+health   120
+map     1
+coords  -50 170
+at      500

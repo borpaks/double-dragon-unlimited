@@ -1,0 +1,171 @@
+music		data/music/b2-2.ogg
+bossmusic       data/music/b2boss.ogg
+background	data/bgs/china/b2-2b.gif
+panel		data/bgs/china/b2-2p2.gif
+#frontpanel	data/bgs/ddragonx/stage6-1/f01.gif
+order         a
+
+wall 345 146 0 38 224 234 100 300
+wall 543 243 0 0 140 140 42 300
+wall 579 148 0 0 1000 1000 100 300
+wall 470 243 0 0 78 78 26 300
+wall 1254 243 0 0 154 154 38 300  
+hole 683 243 0 0 575 575 28
+spawn1 50 50 
+spawn2 100 50 
+#-------1
+spawn	jimmy
+health  140
+map     1
+flip    1
+coords	10 159
+at      0
+
+spawn	box
+health  5
+item   bomb1
+coords	36 230
+at      0
+
+spawn	kame
+health  5
+item    money
+coords	288 119
+at      0
+
+spawn	rock
+flip    1
+coords  567 200
+at      0
+
+group   3 3
+at      0
+
+wait
+at      0
+
+spawn	mibobo
+map     4
+coords  350 160
+at      0
+
+spawn	mibobo
+map     3
+coords  340 205
+at      0
+
+spawn	mibobo
+map     3
+coords  340 230
+at      0
+
+#-------2
+
+
+
+
+
+group   2 2
+at      550
+
+wait
+at      550
+
+spawn   burnov
+health  200
+coords  350 160
+at      450
+
+spawn   burnov
+health  200
+coords  -30 170
+at      450
+
+wait
+at      500
+
+
+
+#-------4
+
+group   4 4
+at      705
+
+spawn   williams
+
+coords  -30 160
+at      705
+
+spawn   williams
+map     6
+coords  -40 170
+at      705
+
+spawn   roper
+
+coords  -50 160
+at      705
+
+wait
+at      800
+
+spawn   jeff
+map     4
+coords  360 170
+at      800
+
+spawn   abobo
+
+coords  330 160
+at      800
+
+#-------5
+
+spawn	rock2
+flip    1
+coords  367 204
+at      900
+
+group   1 3
+at      1150
+
+wait
+at      1150
+
+
+spawn   chin
+health  200
+map     1
+coords  -30 160
+at      1150
+
+spawn   chin
+health  200
+map     1
+coords  380 160
+at      1150
+
+spawn   chin
+health  200
+
+coords  -30 160
+at      1150
+
+
+
+group   1 2
+at      1150
+
+spawn   hong
+health  250
+map     2
+boss    1
+coords  350 200
+at      1150
+
+spawn   hong
+health  250
+boss    1
+map     4
+coords  350 190
+at      1150

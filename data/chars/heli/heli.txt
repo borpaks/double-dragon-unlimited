@@ -1,0 +1,22 @@
+name	heli
+health	0
+type	item
+shadow	0
+icon	data/chars/misc/empty.gif
+
+anim idle
+	loop	1
+	delay	1
+	offset	228 228
+	bbox	0 0 0 0
+	frame	data/chars/heli/idle04.gif
+	offset	228 227
+	frame	data/chars/heli/idle04.gif
+
+
+
+
+
+
+
+

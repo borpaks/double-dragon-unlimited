@@ -1,0 +1,15 @@
+name	Flashb
+type	none
+shadow	0
+alpha   0
+
+anim idle
+	 loop      0
+	 delay     5 
+	 offset    40 36
+	 frame     data/chars/misc/flasha.gif
+	 frame     data/chars/misc/flashb.gif
+	 frame     data/chars/misc/flashc.gif
+	 frame     data/chars/misc/flashd.gif
+
+

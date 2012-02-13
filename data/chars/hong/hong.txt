@@ -1,0 +1,232 @@
+name	Hong
+health	100
+speed	10
+type	enemy
+nolife        1
+#cantgrab  1
+diesound data/sounds/die1.wav
+icon	data/chars/Hong/icon.gif
+paingrab 1
+candamage player npc
+hostile player npc
+jumpheight 3
+
+remap	data/chars/Hong/walk00.gif data/chars/Hong/map1.gif
+remap	data/chars/Hong/walk00.gif data/chars/Hong/map2.gif
+remap	data/chars/Hong/walk00.gif data/chars/Hong/map3.gif
+remap	data/chars/Hong/walk00.gif data/chars/Hong/map4.gif
+remap	data/chars/Hong/walk00.gif data/chars/Hong/map5.gif
+
+
+anim idle
+	loop	1
+	delay	15
+	offset	62 116
+	bbox	47 47 19 70	
+	frame	data/chars/Hong/walk00.gif
+  
+
+anim walk
+	loop	1
+	delay	15
+	offset	62 116
+	bbox	47 47 19 70
+	frame	data/chars/Hong/walk00.gif
+	frame	data/chars/Hong/walk01.gif
+	frame	data/chars/Hong/walk02.gif
+	frame	data/chars/Hong/walk03.gif
+	frame	data/chars/Hong/walk00.gif
+	frame	data/chars/Hong/walk01.gif
+	frame	data/chars/Hong/walk02.gif
+	frame	data/chars/Hong/walk03.gif
+	frame	data/chars/Hong/walk04.gif
+	frame	data/chars/Hong/walk05.gif
+	frame	data/chars/Hong/walk06.gif
+	frame	data/chars/Hong/walk04.gif
+	frame	data/chars/Hong/walk05.gif
+	frame	data/chars/Hong/walk06.gif
+	frame	data/chars/Hong/walk04.gif
+	frame	data/chars/Hong/walk05.gif
+	frame	data/chars/Hong/walk06.gif
+
+
+anim attack1
+	range   0 30
+        loop	0
+	delay	7
+	bbox	47 47 19 70   
+	offset	60 116
+        frame	data/chars/Hong/punch00.gif	
+        frame	data/chars/Hong/punch01.gif
+        frame	data/chars/Hong/punch02.gif
+        attack	68 53 25 14 8 
+        frame	data/chars/Hong/punch03.gif
+        attack	0
+        frame	data/chars/Hong/punch01.gif
+        frame	data/chars/Hong/punch00.gif
+        attack	65 61 25 19 8 
+        frame	data/chars/Hong/punch04.gif
+        attack	0
+        frame	data/chars/Hong/punch00.gif	
+        frame	data/chars/Hong/punch01.gif
+        frame	data/chars/Hong/punch02.gif
+        attack	68 53 25 14 8 
+        frame	data/chars/Hong/punch03.gif
+        attack	0
+        frame	data/chars/Hong/punch01.gif
+        frame	data/chars/Hong/punch00.gif
+        attack	65 61 25 19 8
+        frame	data/chars/Hong/punch04.gif
+
+
+anim attack2
+	range   10 40
+        loop	0
+	offset	60 116
+	bbox	47 47 19 70	
+	delay	7
+	frame   data/chars/Hong/spin00.gif
+ 	frame   data/chars/Hong/spin01.gif
+        blast	13 52 45 45 13 1
+	frame   data/chars/Hong/spin02.gif
+        attack	0
+ 	frame   data/chars/Hong/spin03.gif
+        blast	59 47 46 20 13 1
+	frame   data/chars/Hong/spin04.gif
+        blast	0
+ 	frame   data/chars/Hong/spin05.gif
+	frame   data/chars/Hong/spin06.gif
+
+
+anim attack3
+	range   60 100
+        loop	0
+	offset	60 116
+	bbox	45 33 25 27	
+	delay	10
+	jumpframe 1 2
+        frame   data/chars/Hong/jatk00.gif
+ 	frame   data/chars/Hong/jatk01.gif
+	frame   data/chars/Hong/jatk02.gif
+	delay	20
+        attack	55 63 39 9 8 1
+ 	frame   data/chars/Hong/jatk03.gif
+	delay	10
+	frame   data/chars/Hong/jatk04.gif
+
+anim special
+	range   10 40
+        loop	0
+	offset	60 116
+	bbox	47 47 19 70	
+	delay	7
+	frame   data/chars/Hong/spin00.gif
+ 	frame   data/chars/Hong/spin01.gif
+        blast	13 52 45 45 13 1
+	frame   data/chars/Hong/spin02.gif
+        attack	0
+ 	frame   data/chars/Hong/spin03.gif
+        blast	59 47 46 20 13 1
+	frame   data/chars/Hong/spin04.gif
+        blast	0
+ 	frame   data/chars/Hong/spin05.gif
+	frame   data/chars/Hong/spin06.gif
+
+anim upper
+	loop	0
+	offset	60 116	
+	delay	7
+	frame   data/chars/Hong/spin00.gif
+ 	frame   data/chars/Hong/spin01.gif
+        blast	13 52 45 45 13 1
+	frame   data/chars/Hong/spin02.gif
+        blast	0
+ 	frame   data/chars/Hong/spin03.gif
+        attack	59 47 46 20 13 1
+	frame   data/chars/Hong/spin04.gif
+        blast	0
+ 	frame   data/chars/Hong/spin05.gif
+	frame   data/chars/Hong/spin06.gif
+
+
+
+anim pain
+	loop	0
+	offset	60 116
+	bbox	47 47 19 70	
+	delay	20
+	frame   data/chars/Hong/pain00.gif
+	bbox	47 47 19 70
+ 	frame   data/chars/Hong/pain01.gif
+
+anim pain2
+	loop	0
+	offset	40 126
+	bbox	47 47 19 70	
+	delay	30
+	jumpframe 0
+        frame   data/chars/Hong/fall00.gif
+	bbox	47 47 19 70
+ 	frame   data/chars/Hong/fall01.gif
+
+anim pain3
+	loop	0
+	offset	60 116
+	bbox	47 47 19 70	
+	delay	50
+	
+	bbox	47 47 19 70
+ 	frame   data/chars/Hong/pain01.gif
+
+anim pain4
+	 loop       0
+	 delay      2
+	 offset     60 116
+ 	 bbox	    47 47 19 70
+	 move       -3
+         frame      data/chars/Hong/pain01.gif
+         frame      data/chars/Hong/pain01.gif
+         frame      data/chars/Hong/pain01.gif
+         frame      data/chars/Hong/pain01.gif
+	 move       0
+	 delay      50
+         frame      data/chars/Hong/pain01.gif
+
+anim fall
+	loop	0
+	offset	60 110
+	delay	20
+	attack	28 59 32 18 4 1
+	frame   data/chars/Hong/fall00.gif
+	frame   data/chars/Hong/fall00.gif
+	frame   data/chars/Hong/fall01.gif
+
+anim fall2
+	loop	0
+	offset	60 110
+	delay	20
+	attack	28 59 32 18 4 1
+	bbox    28 59 32 18
+          jumpframe 0 4 0 0
+        move    -2
+        frame   data/chars/Hong/fall00.gif
+	frame   data/chars/Hong/fall00.gif
+	move    0
+        frame   data/chars/Hong/fall01.gif
+
+anim fall4
+	loop	0
+	offset	60 110
+	delay	20
+	bbox    28 59 32 18
+	frame   data/chars/Hong/fall00.gif
+	frame   data/chars/Hong/fall00.gif
+	frame   data/chars/Hong/fall01.gif
+
+anim rise
+	loop	0
+	offset	60 116
+	delay	5
+        frame   data/chars/Hong/rise.gif
+
+

@@ -1,0 +1,130 @@
+music		data/music/arrange/dd2st4.ogg
+bossmusic	data/music/2boss.ogg
+background	data/bgs/subway/2-2b.gif
+panel		data/bgs/subway/2-2p.gif
+#frontpanel	data/bgs/ddragonx/stage2-2/f01.gif
+order	a
+
+direction       right
+bgspeed         40
+spawn1 50 50 
+spawn2 100 50
+
+#-------1
+spawn	jimmy
+health  100
+map     1
+flip    1
+coords	100 179
+at      0
+
+group   1 3
+at      0
+
+wait 
+at      0
+
+spawn   matrix1
+#map     1
+
+coords  380 140
+at      0
+
+spawn   matrix1
+#map     1
+coords  400 160
+at      0
+
+
+
+spawn   matrix1
+coords  440 120
+at      0
+
+#-------2
+
+group    1 5
+at       250
+
+wait
+at       424
+
+spawn    williams
+map      6
+coords   380 160
+at       250
+
+spawn    jeff
+map      4
+coords   390 140
+at       285
+
+spawn    roper
+map      3
+coords   400 110
+at       250
+
+wait
+at       424
+
+spawn   abobo
+#map      5
+coords   410 110
+at       250
+
+spawn    linda2
+map      4
+coords   420 160
+at       250
+
+#-------3
+
+group    1 3
+at       560
+
+spawn    matrix1
+health   100
+#map      1
+coords   380 160
+at       560
+
+spawn    matrix1
+health   100
+#map      1
+coords   380 130
+at       560
+
+
+
+spawn    matrix1
+
+coords   400 140
+at       560
+
+#-------4
+
+group   1 2
+at      1048
+
+spawn   carlem
+health  300
+boss    1
+coords  284 150
+at      1048
+
+spawn   steve
+health  250
+
+coords  284 130
+at      1048
+
+
+
+
+
+
+
+
+
+
+

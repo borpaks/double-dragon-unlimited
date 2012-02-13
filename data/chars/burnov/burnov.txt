@@ -1,0 +1,244 @@
+name	Burnov
+health	100
+speed	8
+type	enemy
+shadow	1
+#cantgrab  1
+grabdistance 30
+falldie   1
+diesound data/sounds/die5.wav
+paingrab 1
+icon	data/chars/burnov/icon.gif
+nolife        1
+jumpheight 3 
+candamage player npc
+hostile player npc
+
+remap   data/chars/burnov/wk2.gif   data/chars/burnov/alter1.gif
+remap   data/chars/burnov/wk2.gif   data/chars/burnov/alter2.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	70 128
+	bbox	55 65 28 66
+	frame	data/chars/burnov/wk1.gif
+
+
+anim walk
+	loop	1
+	delay	15
+	offset	70 128
+	bbox	55 65 28 66
+	frame	data/chars/burnov/wk1.gif
+	frame	data/chars/burnov/wk2.gif
+	frame	data/chars/burnov/wk3.gif
+	frame	data/chars/burnov/wk4.gif
+
+
+anim attack1
+	range   0 40
+	loop	0
+	delay	7
+	offset	70 125
+	bbox	55 65 28 66
+	frame	data/chars/burnov/a201.gif
+	frame	data/chars/burnov/a202.gif
+	attack  80 73 32 32 8
+	delay   13
+	frame	data/chars/burnov/a203.gif
+	delay   7
+	attack  0 0 0 0 0 
+	frame	data/chars/burnov/a202.gif
+	frame	data/chars/burnov/a201.gif
+	offset  70 128
+	frame	data/chars/burnov/a101.gif
+	frame	data/chars/burnov/a102.gif
+	attack  80 73 32 32 15
+	delay   13
+	frame	data/chars/burnov/a103.gif
+	delay   8
+        attack  0 0 0 0 0
+	frame	data/chars/burnov/a102.gif
+	frame	data/chars/burnov/a101.gif
+	offset	70 125
+	bbox	55 65 28 66
+	frame	data/chars/burnov/a201.gif
+	frame	data/chars/burnov/a202.gif
+	attack  80 73 32 32 18 1
+	delay   13
+	frame	data/chars/burnov/a203.gif
+	delay   9
+	attack  0 0 0 0 0 
+	frame	data/chars/burnov/a202.gif
+	frame	data/chars/burnov/a201.gif
+
+
+anim grab
+	loop	0
+	offset	70 128
+	bbox	55 65 28 66
+	delay	13
+	sound   data/sounds/burnov1.wav
+	frame	data/chars/burnov/hold1.gif
+	attack  86 77 21 24 10
+	delay   16
+	frame	data/chars/burnov/hold2.gif
+	attack  0 0 0 0 0
+	delay	13
+	frame	data/chars/burnov/hold1.gif
+	attack  86 77 21 24 10
+	delay   16
+	frame	data/chars/burnov/hold2.gif
+	attack  0 0 0 0 0
+	delay	13
+	frame	data/chars/burnov/hold1.gif
+	attack  86 77 21 24 10
+	delay   16
+	frame	data/chars/burnov/hold2.gif
+	attack  0 0 0 0 0
+	delay	13
+	frame	data/chars/burnov/hold1.gif
+	delay   15
+	frame	data/chars/burnov/hold3.gif
+	attack  84 67 22 25 15 1
+	frame	data/chars/burnov/hold4.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/burnov/hold5.gif
+
+
+
+anim pain
+	loop	0
+	delay	8
+	offset	70 128
+	bbox	55 65 28 66
+	frame	data/chars/burnov/pain1.gif
+        
+
+anim pain2
+	loop	0
+	delay	30
+	offset	42 183
+	bbox	52 70 20 61
+	jumpframe 0
+        frame	data/chars/burnov/fall2.gif
+        delay   17
+        frame	data/chars/burnov/fall1.gif
+
+anim pain3
+	loop	0
+	delay	50
+	offset	70 128
+	bbox	55 65 28 66
+	
+        
+	frame	data/chars/burnov/pain2.gif
+
+anim pain4
+	 loop       0
+	 delay      2
+	 offset     62 133
+	 bbox       52 70 20 61
+	 move       -3
+         frame      data/chars/burnov/pain2.gif
+         frame      data/chars/burnov/pain2.gif
+         frame      data/chars/burnov/pain2.gif
+         frame      data/chars/burnov/pain2.gif
+	 move       0
+	 delay      50
+         frame      data/chars/burnov/pain2.gif
+
+anim fall
+	loop	0
+	offset	70 128
+	delay   55
+        attack  47 69 20 40 5 1
+	frame	data/chars/burnov/fall1.gif
+        delay   20
+        attack  0 0 0 0 0
+	frame	data/chars/burnov/fall2.gif
+
+anim fall2
+	loop	0
+	offset	70 128
+	delay   55
+        attack  47 69 20 40 5 1
+	bbox    42 108 46 23
+        jumpframe 0 4 0 0
+        move    -8
+        frame	data/chars/burnov/fall1.gif
+        delay   20
+        attack  0 0 0 0 0
+	frame	data/chars/burnov/fall2.gif
+
+anim fall4
+	loop	0
+	offset	70 128
+	delay   55
+        bbox    42 108 46 23
+	frame	data/chars/burnov/fall1.gif
+        delay   20
+        attack  0 0 0 0 0
+	frame	data/chars/burnov/fall2.gif
+
+anim rise
+	loop	0
+	delay	20
+	offset	70 128
+	frame	data/chars/burnov/rise.gif
+
+
+anim death
+	loop	0
+	delay	15
+	offset	70 128
+	bbox	55 65 28 66
+	frame	data/chars/burnov/fall2.gif
+	frame	data/chars/burnov/rise.gif
+	sound   data/sounds/tel1.wav
+	frame	data/chars/burnov/die1.gif
+	frame	data/chars/burnov/die2.gif
+	frame	data/chars/burnov/die1.gif
+	frame	data/chars/burnov/die2.gif
+	frame	data/chars/burnov/die1.gif
+	frame	data/chars/burnov/die2.gif
+	delay   13
+	frame	data/chars/burnov/die3.gif
+	frame	data/chars/burnov/die4.gif
+	frame	data/chars/burnov/die5.gif
+	frame	data/chars/burnov/die6.gif
+	frame	data/chars/burnov/die7.gif
+	frame	data/chars/burnov/die8.gif
+	delay   30
+	frame	data/chars/burnov/die9.gif
+
+
+
+anim respawn
+	loop	0
+	offset	70 128
+	delay	35
+	frame	data/chars/burnov/die9.gif
+	delay	13
+	sound   data/sounds/tel2.wav
+	frame	data/chars/burnov/die8.gif
+	frame	data/chars/burnov/die7.gif
+	frame	data/chars/burnov/die6.gif
+	frame	data/chars/burnov/die5.gif
+	frame	data/chars/burnov/die4.gif
+	frame	data/chars/burnov/die3.gif
+	frame	data/chars/burnov/die2.gif
+	frame	data/chars/burnov/die1.gif
+	frame	data/chars/burnov/die2.gif
+	frame	data/chars/burnov/die1.gif
+	frame	data/chars/burnov/die2.gif
+	frame	data/chars/burnov/die1.gif
+	frame	data/chars/burnov/die2.gif
+	frame	data/chars/burnov/die1.gif
+	frame	data/chars/burnov/die2.gif
+	delay   18
+	frame	data/chars/burnov/die1.gif
+
+
+

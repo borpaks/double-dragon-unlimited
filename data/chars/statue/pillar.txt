@@ -1,0 +1,18 @@
+name	Pillar
+type	trap
+icon	data/chars/statue/icon.gif
+
+anim idle
+	loop	1
+	delay	100
+	offset	200 200
+	frame	data/chars/statue/a101.gif
+	delay   15
+	attack  53 106 91 37 25 1
+	frame	data/chars/statue/a102.gif
+	delay   190
+	attack  0 0 0 0 0 0
+	frame	data/chars/statue/a101.gif
+
+
+

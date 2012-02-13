@@ -1,0 +1,177 @@
+name	Kikucho
+health	100
+speed	10
+type	enemy
+#cantgrab  1
+grabdistance 28
+shadow	0
+diesound data/sounds/die1.wav
+icon	data/chars/Kikucho/icon.gif
+paingrab 1
+nolife        1
+jumpheight 3
+candamage player npc
+hostile player npc
+
+remap	data/chars/Kikucho/walk00.gif data/chars/Kikucho/map1.gif
+remap	data/chars/Kikucho/walk00.gif data/chars/Kikucho/map2.gif
+remap	data/chars/Kikucho/walk00.gif data/chars/Kikucho/map3.gif
+
+
+anim idle
+	loop	1
+	delay	15
+	offset	63 116
+	bbox	47 51 20 65	
+	frame	data/chars/Kikucho/walk00.gif
+  
+
+anim walk
+	loop	1
+	delay	15
+	offset	63 116
+	bbox	47 51 20 65
+	frame	data/chars/Kikucho/walk00.gif
+	frame	data/chars/Kikucho/walk01.gif
+	frame	data/chars/Kikucho/walk02.gif
+	frame	data/chars/Kikucho/walk03.gif
+	frame	data/chars/Kikucho/walk00.gif
+	frame	data/chars/Kikucho/walk01.gif
+	frame	data/chars/Kikucho/walk02.gif
+	frame	data/chars/Kikucho/walk03.gif
+	frame	data/chars/Kikucho/slash00.gif
+	frame	data/chars/Kikucho/walk04.gif
+	frame	data/chars/Kikucho/walk05.gif
+	frame	data/chars/Kikucho/slash00.gif
+	frame	data/chars/Kikucho/walk04.gif
+	frame	data/chars/Kikucho/walk05.gif
+	frame	data/chars/Kikucho/slash00.gif
+	frame	data/chars/Kikucho/walk04.gif
+	frame	data/chars/Kikucho/walk05.gif
+
+
+anim attack1
+	loop	0
+	delay	20
+	bbox	47 51 20 65   
+	offset	63 116
+        frame	data/chars/Kikucho/slash00.gif
+	delay	10	
+        frame	data/chars/Kikucho/slash01.gif
+        frame	data/chars/Kikucho/slash02.gif 
+        frame	data/chars/Kikucho/slash03.gif
+	delay	20	
+        frame	data/chars/Kikucho/slash04.gif
+	delay	10
+	attack	76 75 38 16 45 1
+        frame	data/chars/Kikucho/slash05.gif
+	attack	0
+        frame	data/chars/Kikucho/slash02.gif
+	delay	20
+        frame	data/chars/Kikucho/slash01.gif
+	sound   data/chars/Kikucho/seth.wav
+        frame	data/chars/Kikucho/slash00.gif
+
+
+anim attack2
+	loop	0
+	delay	20
+	bbox	47 51 20 65   
+	offset	63 116
+        frame	data/chars/Kikucho/slash00.gif
+	delay	10	
+        frame	data/chars/Kikucho/slash01.gif
+        frame	data/chars/Kikucho/slash02.gif
+	delay	20
+	attack	76 75 38 16 12 1 
+        frame	data/chars/Kikucho/slash03.gif
+	attack	0
+	delay	10
+        frame	data/chars/Kikucho/slash02.gif
+        frame	data/chars/Kikucho/slash01.gif
+	delay	20
+	sound   data/chars/Kikucho/seth.wav
+        frame	data/chars/Kikucho/slash00.gif
+
+
+
+
+
+anim pain
+	loop	0
+	offset	63 116
+	bbox	47 51 20 65	
+	delay	20
+	frame   data/chars/Kikucho/pain00.gif
+	bbox	47 51 20 65
+ 	frame   data/chars/Kikucho/pain01.gif
+
+anim pain2
+	loop	0
+	offset	40 115
+	bbox	47 51 20 65	
+	delay	30
+	jumpframe 0 4 0 0
+        frame   data/chars/Kikucho/fall00.gif
+	bbox	47 51 20 65
+ 	frame   data/chars/Kikucho/fall01.gif
+
+
+anim pain3
+	loop	0
+	offset	63 116
+	bbox	47 51 20 65	
+	delay	50
+	
+ 	frame   data/chars/Kikucho/pain01.gif
+
+anim pain4
+	 loop       0
+	 delay      2
+	 offset     63 116
+ 	 bbox       47 51 20 65
+	 move       -3
+         frame      data/chars/Kikucho/pain01.gif
+         frame      data/chars/Kikucho/pain01.gif
+         frame      data/chars/Kikucho/pain01.gif
+         frame      data/chars/Kikucho/pain01.gif
+	 move       0
+	 delay      50
+         frame      data/chars/Kikucho/pain01.gif
+
+anim fall
+	loop	0
+	offset	63 110
+	delay	20
+	attack	28 59 32 18 4 1
+	frame   data/chars/Kikucho/fall00.gif
+	frame   data/chars/Kikucho/fall00.gif
+	frame   data/chars/Kikucho/fall01.gif
+
+anim fall2
+	loop	0
+	offset	63 110
+	delay	20
+	attack	28 59 32 18 4 1
+	bbox    28 59 32 18
+        jumpframe  0
+        frame   data/chars/Kikucho/fall00.gif
+	frame   data/chars/Kikucho/fall00.gif
+	frame   data/chars/Kikucho/fall01.gif
+
+anim fall4
+	loop	0
+	offset	63 110
+	delay	20
+	bbox    28 59 32 18
+	frame   data/chars/Kikucho/fall00.gif
+	frame   data/chars/Kikucho/fall00.gif
+	frame   data/chars/Kikucho/fall01.gif
+
+anim rise
+	loop	0
+	offset	63 116
+	delay	5
+        frame   data/chars/Kikucho/rise.gif
+
+

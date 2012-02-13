@@ -1,0 +1,155 @@
+music		data/music/3-1.ogg
+
+background	data/bgs/airport/b01.gif
+panel		data/bgs/airport/n01.gif
+#frontpanel	data/bgs/ddragonx/stage5-1/f01.gif
+order         a
+
+direction       right
+
+#-------1
+spawn	jimmy
+health  130
+map     1
+coords	100 179
+at      0
+
+spawn	sonny
+health  130
+map     1
+coords	100 179
+at      0
+
+group   1 2
+at      0
+
+wait
+at      0
+
+spawn	abore
+
+coords  380 225 
+at      0
+
+spawn	abore
+
+coords  380 215 
+at      0
+
+#-------2
+
+group   4 4
+at      150
+
+wait
+at      150
+
+spawn   jeff
+map     3
+coords  380 200
+at      150
+
+spawn   jeff
+map     4
+alias   Roper
+coords  400 210
+at      150
+
+spawn   Williams 
+coords  -40 200
+at      150
+
+spawn   Roper2
+alias   Roper
+map     1
+coords  -50 220
+at      150
+
+#-------3
+
+group   4 4
+at      345
+
+spawn   Linda2
+coords  -30 200
+at      345
+
+spawn   Linda2
+coords  -30 230
+at      345
+
+spawn   Linda3
+item    bomb1
+coords  400 200
+at      345
+
+wait 
+at      445
+
+spawn   Linda
+map     2
+coords  -30 220
+at      445
+
+spawn   Linda
+map     2
+coords  -30 200
+at      445
+
+#-------4
+
+group   4 4
+at      660
+
+spawn   Williams
+map     4
+coords  -30 210
+at      660
+
+spawn   matrix1 
+map     2
+coords  -40 200
+at      660
+
+spawn   oharra
+map     1
+health  150
+coords  400 230
+at      660
+
+wait
+at      760
+
+spawn   matrix1 
+map     2
+alias   Roper
+coords  380 200
+at      760
+
+spawn   Roper2
+map     1
+alias   Roper
+coords  380 220
+at      760
+
+#-------5
+
+
+
+group   1 2
+at      1158
+
+spawn   ninja
+health  150
+#map     1
+coords  380 200
+at      1158
+
+spawn   ninja
+#map     1
+health  150
+coords  380 220
+at      1158
+
+#-------6
+

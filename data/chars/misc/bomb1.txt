@@ -1,0 +1,19 @@
+name	 Bomb1
+health   0
+type     item
+subtype  weapon
+counter  999
+shootnum 1
+weapnum  2
+remove   0
+nolife   1
+weaploss 2
+
+anim idle
+	loop   1
+	offset 11 15
+	bbox   5 2 13 13
+	frame  data/chars/misc/bomb.gif
+
+
+

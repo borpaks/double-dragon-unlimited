@@ -1,0 +1,135 @@
+name	Roper2
+health	50
+speed	8
+type	enemy
+shadow	1
+diesound data/sounds/die3.wav
+paingrab 1
+icon	data/chars/roper/icon.gif
+nolife        1
+jumpheight 3 
+candamage player npc
+hostile player npc
+remap   data/chars/roper/wk2.gif    data/chars/roper/alter4.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	62 133
+	bbox	52 70 20 61
+	frame	data/chars/roper/wkbat1.gif
+
+
+anim walk
+	loop	1
+	delay	13
+	offset	62 133
+	bbox	52 70 20 61
+	frame	data/chars/roper/wkbat2.gif
+	frame	data/chars/roper/wkbat3.gif
+	frame	data/chars/roper/wkbat4.gif
+	frame	data/chars/roper/wkbat1.gif
+
+
+anim attack1
+        range   0 25
+	loop	0
+	delay	8
+	offset	62 133
+	bbox	52 70 20 61
+	sound   data/sounds/bat.wav
+	frame	data/chars/roper/bat1.gif
+	frame	data/chars/roper/bat2.gif
+        attack  71 87 38 20 18 1
+        delay   15
+	frame	data/chars/roper/bat3.gif
+        attack  0 0 0 0 0 0
+        delay   25
+	frame	data/chars/roper/bat4.gif
+
+
+anim pain
+	loop	0
+	delay	23
+	offset	62 133
+	bbox	52 70 20 61
+	frame	data/chars/roper/painbat1.gif
+        delay   35
+	frame	data/chars/roper/painbat2.gif
+
+anim pain2
+	loop	0
+	delay	30
+	offset	42 183
+	bbox	52 70 20 61
+	jumpframe 0
+        frame	data/chars/roper/fall2.gif
+        delay   17
+        frame	data/chars/roper/fall1.gif
+
+anim pain3
+	loop	0
+	delay	23
+	offset	62 133
+	bbox	52 70 20 61
+	frame	data/chars/roper/painbat1.gif
+        delay   55
+	frame	data/chars/roper/painbat2.gif
+
+anim pain4
+	 loop       0
+	 delay      2
+	 offset     62 133
+	 bbox       52 70 20 61
+	 move       -3
+         frame      data/chars/roper/pain2.gif
+         frame      data/chars/roper/pain2.gif
+         frame      data/chars/roper/pain2.gif
+         frame      data/chars/roper/pain2.gif
+	 move       0
+	 delay      50
+         frame      data/chars/roper/pain2.gif
+
+anim fall
+	loop	0
+	offset	62 133
+	delay   60
+        attack  40 91 27 25 5 1
+	frame	data/chars/roper/fallbt1.gif
+        delay   20
+        attack  0 0 0 0 0
+	frame	data/chars/roper/fallbt2.gif
+	frame	data/chars/roper/fallbt3.gif
+
+anim fall2
+	loop	0
+	offset	62 133
+	delay   60
+        bbox    42 108 46 23
+	jumpframe	0 4 0 0
+        move    -8
+        frame	data/chars/roper/fall1.gif
+        delay   20
+        
+	frame	data/chars/roper/fall2.gif
+	
+        frame	data/chars/roper/fall3.gif
+
+anim fall4
+	loop	0
+	offset	62 133
+	delay   60
+        bbox    42 108 46 23
+	frame	data/chars/roper/fallbt1.gif
+        delay   20
+        attack  0 0 0 0 0
+	frame	data/chars/roper/fallbt2.gif
+	frame	data/chars/roper/fallbt3.gif
+
+anim rise
+	loop	0
+	delay	20
+	offset	62 133
+	frame	data/chars/roper/risebat1.gif
+
+

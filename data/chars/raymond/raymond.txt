@@ -1,0 +1,320 @@
+name	Raymond
+health	100
+speed	10
+type	enemy
+shadow	0
+grabdistance 23
+falldie    1
+#cantgrab  1
+diesound data/sounds/die1.wav
+icon	data/chars/Raymond/icon.gif
+paingrab 1
+candamage player npc
+hostile player npc
+jumpheight 3
+remap   data/chars/Raymond/walk00.gif  data/chars/Raymond/map1.gif
+nolife        1
+
+anim spawn
+        loop	0
+	delay	20
+	offset	65 116	
+	
+	delay	10
+        frame	data/chars/Raymond/shade04.gif	
+        frame	data/chars/Raymond/shade03.gif
+        frame	data/chars/Raymond/shade02.gif
+        frame	data/chars/Raymond/shade01.gif
+        frame	data/chars/Raymond/shade01.gif
+
+anim idle
+	loop	1
+	delay	15
+	offset	65 116
+	bbox	51 46 22 70	
+	frame	data/chars/Raymond/walk04.gif
+  
+
+anim walk
+	loop	1
+	delay	15
+	offset	65 116
+	bbox	51 46 22 70
+	frame	data/chars/Raymond/walk00.gif
+	frame	data/chars/Raymond/walk01.gif
+	frame	data/chars/Raymond/walk02.gif
+	frame	data/chars/Raymond/walk03.gif
+	frame	data/chars/Raymond/walk00.gif
+	frame	data/chars/Raymond/walk01.gif
+	frame	data/chars/Raymond/walk02.gif
+	frame	data/chars/Raymond/walk03.gif
+	frame	data/chars/Raymond/walk04.gif
+	frame	data/chars/Raymond/walk05.gif
+	frame	data/chars/Raymond/walk06.gif
+	frame	data/chars/Raymond/walk04.gif
+	frame	data/chars/Raymond/walk05.gif
+	frame	data/chars/Raymond/walk06.gif
+	frame	data/chars/Raymond/walk04.gif
+	frame	data/chars/Raymond/walk05.gif
+	frame	data/chars/Raymond/walk06.gif
+        delay   5
+	frame	data/chars/Raymond/tele00.gif
+	frame	data/chars/Raymond/tele01.gif
+	frame	data/chars/Raymond/tele02.gif
+	frame	data/chars/Raymond/tele03.gif
+	frame	data/chars/Raymond/tele04.gif
+        delay   100
+	frame	data/chars/raymond/tele05.gif
+        delay   5
+	frame	data/chars/Raymond/tele04.gif
+	frame	data/chars/Raymond/tele03.gif
+	frame	data/chars/Raymond/tele02.gif
+	frame	data/chars/Raymond/tele01.gif
+	frame	data/chars/Raymond/tele00.gif
+
+
+anim attack1
+	range   0 30
+        loop	0
+	delay	10  
+	offset	65 116
+	bbox	51 46 22 70	
+        frame	data/chars/Raymond/punch00.gif
+	delay	20
+	attack	73 57 22 15 9 
+        frame	data/chars/Raymond/punch01.gif
+	delay	10
+	attack	0
+        frame	data/chars/Raymond/jatk00.gif	
+        frame	data/chars/Raymond/jatk01.gif
+	delay	20
+	attack	73 77 28 32 9 
+        frame	data/chars/Raymond/low00.gif
+	delay	10
+	attack	0
+        frame	data/chars/Raymond/jatk01.gif	
+        frame	data/chars/Raymond/jatk00.gif
+        frame	data/chars/Raymond/punch00.gif
+	delay	20
+	attack	73 57 22 15 9 1
+        frame	data/chars/Raymond/punch01.gif
+	delay	10
+	attack	0
+        frame	data/chars/Raymond/punch00.gif	
+
+
+anim attack2
+	range   0 30
+        loop	0
+	delay	10
+	offset	65 116
+	bbox	51 46 22 70	
+        frame	data/chars/Raymond/jatk00.gif	
+        frame	data/chars/Raymond/jatk01.gif
+	delay	20
+	attack	73 77 28 32 9 
+        frame	data/chars/Raymond/low00.gif
+	delay	10
+	attack	0
+        frame	data/chars/Raymond/jatk01.gif	
+        frame	data/chars/Raymond/jatk00.gif
+        frame	data/chars/Raymond/punch00.gif
+	delay	20
+	attack	73 57 22 15 9 
+        frame	data/chars/Raymond/punch01.gif
+	delay	10
+        frame	data/chars/Raymond/jatk00.gif	
+        frame	data/chars/Raymond/jatk01.gif
+	delay	20
+	attack	73 77 28 32 9 1
+        frame	data/chars/Raymond/low00.gif
+	delay	10
+	attack	0
+        frame	data/chars/Raymond/jatk01.gif	
+        frame	data/chars/Raymond/jatk00.gif
+
+
+anim attack3
+        range   50 170
+#	rangez  -35 35
+        loop	0
+	delay	20
+	offset	65 116	
+	frame	data/chars/Raymond/walk04.gif
+	delay	10
+        frame	data/chars/Raymond/shade00.gif	
+        frame	data/chars/Raymond/shade01.gif
+        frame	data/chars/Raymond/shade02.gif
+        frame	data/chars/Raymond/shade03.gif
+        move    30	
+	attack	44 104 45 23 15 1
+        frame	data/chars/Raymond/shade04.gif
+        frame	data/chars/Raymond/shade04.gif
+        frame	data/chars/Raymond/shade04.gif
+        frame	data/chars/Raymond/shade04.gif
+        frame	data/chars/Raymond/shade04.gif
+        frame	data/chars/Raymond/shade04.gif
+        frame	data/chars/Raymond/shade04.gif
+        move    0
+        frame	data/chars/Raymond/shade03.gif	
+        frame	data/chars/Raymond/shade02.gif
+        frame	data/chars/Raymond/shade01.gif
+        frame	data/chars/Raymond/shade00.gif
+	frame	data/chars/Raymond/walk04.gif
+
+
+anim upper
+	loop	0
+	delay	10  
+	offset	65 116
+        frame	data/chars/Raymond/kick01.gif
+	delay	6
+        frame	data/chars/Raymond/spin00.gif
+        frame	data/chars/Raymond/spin01.gif
+	blast	17 54 77 10 9 1
+        frame	data/chars/Raymond/spin02.gif
+        frame	data/chars/Raymond/spin03.gif
+	blast	22 53 77 10 9 1	
+        frame	data/chars/Raymond/spin00.gif
+        frame	data/chars/Raymond/spin01.gif
+	blast	17 54 77 10 9 1
+        frame	data/chars/Raymond/spin02.gif
+        frame	data/chars/Raymond/spin03.gif
+	blast	22 53 77 10 9 1
+        frame	data/chars/Raymond/spin00.gif
+        frame	data/chars/Raymond/spin01.gif
+	blast	17 54 77 10 9 1
+        frame	data/chars/Raymond/spin02.gif
+        frame	data/chars/Raymond/spin03.gif	
+	delay	10
+        frame	data/chars/Raymond/spin04.gif
+        frame	data/chars/Raymond/spin05.gif
+
+anim attack4
+	range   25 40
+        loop	0
+	delay	10  
+	offset	65 116
+	bbox	51 46 22 70	
+        frame	data/chars/Raymond/kick00.gif
+        frame	data/chars/Raymond/kick01.gif
+	attack	62 61 35 20 9
+        frame	data/chars/Raymond/kick02.gif
+	attack	0
+        frame	data/chars/Raymond/kick01.gif
+	attack	62 68 39 12 9 
+        frame	data/chars/Raymond/kick03.gif
+	attack	0
+        frame	data/chars/Raymond/kick01.gif
+	attack	62 61 35 20 9 1
+        frame	data/chars/Raymond/kick02.gif
+	attack	0
+        frame	data/chars/Raymond/spin05.gif
+
+
+anim jumpattack
+	range   75 80
+        loop	0
+	delay	10 
+	offset	65 116
+	bbox	51 45 29 35	
+        frame	data/chars/Raymond/jatk00.gif	
+        frame	data/chars/Raymond/jatk01.gif
+        frame	data/chars/Raymond/jatk02.gif
+        delay	20
+	attack	68 70 41 12 9 1
+        frame	data/chars/Raymond/jatk03.gif
+
+
+anim pain
+	loop	0
+	offset	65 116
+	bbox	51 46 22 70 	
+	delay	8
+	frame   data/chars/Raymond/pain00.gif
+	
+
+anim pain2
+	loop	0
+	offset	35 136
+	bbox	20 43 77 61	
+	delay	30
+	jumpframe 0
+        frame   data/chars/Raymond/fall00.gif
+	bbox	51 46 22 70
+ 	frame   data/chars/Raymond/fall01.gif
+
+anim pain3
+	loop	0
+	offset	65 116
+	bbox	51 46 22 70 	
+	delay	8
+	frame   data/chars/Raymond/pain00.gif
+	delay   45
+        frame   data/chars/Raymond/pain01.gif
+
+anim pain4
+	 loop       0
+	 delay      2
+	 offset     65 116
+	 bbox       51 46 22 70 	
+	 move       -3
+         frame      data/chars/Raymond/pain01.gif
+         frame      data/chars/Raymond/pain01.gif
+         frame      data/chars/Raymond/pain01.gif
+         frame      data/chars/Raymond/pain01.gif
+	 move       0
+	 delay      50
+         frame      data/chars/Raymond/pain01.gif
+
+anim fall
+	loop	0
+	offset	65 109
+	delay	20
+	attack	27 51 31 19 4 1
+	frame   data/chars/Raymond/fall00.gif
+	frame   data/chars/Raymond/fall00.gif
+	frame   data/chars/Raymond/fall01.gif
+
+anim fall2
+	loop	0
+	offset	65 109
+	delay	20
+	attack	27 51 31 19 4 1
+	jumpframe 0 4 0 0
+        bbox    27 51 31 29
+        frame   data/chars/Raymond/fall00.gif
+	frame   data/chars/Raymond/fall00.gif
+	move    0
+        frame   data/chars/Raymond/fall01.gif
+
+anim fall4
+	loop	0
+	offset	65 109
+	delay	20
+	 bbox    27 51 31 29
+	frame   data/chars/Raymond/fall00.gif
+	frame   data/chars/Raymond/fall00.gif
+	frame   data/chars/Raymond/fall01.gif
+
+anim rise
+	loop	0
+	offset	65 116
+	delay	5
+        frame   data/chars/Raymond/rise.gif
+
+
+anim death
+       	loop	0
+	offset	65 110
+	delay	10
+        frame   data/chars/Raymond/rise.gif
+	delay	20
+        frame   data/chars/Raymond/die00.gif
+        frame   data/chars/Raymond/die01.gif
+        frame   data/chars/Raymond/die02.gif
+
+
+
+
+

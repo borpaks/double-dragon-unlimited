@@ -1,0 +1,170 @@
+music		data/music/arrange/dd2st2.ogg
+
+background	data/bgs/park/1-1b.gif
+panel		data/bgs/park/1-1pt.gif
+#frontpanel	data/bgs/ddragon2/stage1-1/f01.gif
+order         a
+direction      right
+bgspeed       1
+spawn1  60 10
+spawn2  80 15
+
+wall    50 210 -46 -46 0 0 148 300
+
+#-------1
+
+
+
+
+spawn	drum
+health  5
+item    money
+coords	461 205
+at      0
+
+spawn	drum
+health  5
+item    berry
+coords	823 158
+at      0
+
+group   2 2
+at      0
+
+wait  
+at      0
+
+spawn	williams
+map     2
+#item    bomb1
+health  50
+coords	400 160
+
+at	0
+
+spawn	williams
+map     6
+health  50
+coords	410 200
+at	0
+
+
+
+
+#-------2
+
+group   3 3
+at      105
+
+spawn   Roper
+map     1
+health  50
+coords  400 200
+at      105
+
+spawn   williams
+map     1
+health  50
+coords  400 160
+at      105
+
+wait
+at      190
+
+spawn   Roper2
+map     1
+coords  400 200
+health  50
+at      190
+
+spawn   Linda
+health  40
+coords  400 200
+at      190
+
+#-------3
+
+group   3 3
+at      325
+
+spawn   Roper
+health  55
+coords  400 200
+at      325
+
+
+spawn   jeff
+map     4
+
+coords  380 190
+at      425
+
+spawn	williams
+map     1
+health  50
+coords	400 210
+at	425
+
+spawn	williams
+map     6
+health  50
+coords	400 200
+at	425
+
+
+#-------4
+
+group   3 3
+at      665
+
+spawn   Linda2
+alias   Linda
+health  40
+coords  380 200
+at      665
+
+spawn   Linda2
+alias   Linda
+health  40
+coords  380 160
+at      665
+
+spawn   Linda
+map     1
+health  40
+coords  380 200
+at      665
+
+wait 
+at      740
+
+spawn   Roper2
+map     1
+health  50
+coords  380 200
+at      740
+
+spawn	williams
+map     3
+health  50
+coords	400 160
+at	740
+
+
+#-------5
+
+group   1 1
+at      912
+
+spawn   bolo
+alias	Abobo
+map     1
+health  150
+coords  380 170
+at      912
+
+
+
+
+
+

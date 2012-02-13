@@ -1,0 +1,32 @@
+name	Spear
+type	trap
+icon	data/chars/spear/icon.gif
+
+anim idle
+	loop	1
+	delay	180
+	offset	16 105
+	frame	data/chars/spear/a100.gif
+	attack  9 77 14 30 20 1
+	delay   4
+	frame	data/chars/spear/a101.gif
+	frame	data/chars/spear/a102.gif
+	attack  9 64 15 43 20 1
+	frame	data/chars/spear/a103.gif	
+	attack  9 47 15 58 20 1
+	frame	data/chars/spear/a104.gif
+	attack  9 26 15 80 20 1
+	delay   8
+	frame	data/chars/spear/a105.gif
+	delay   4
+	attack  9 47 15 58 20 1
+	frame	data/chars/spear/a104.gif
+	attack  9 64 15 43 20 1
+	frame	data/chars/spear/a103.gif	
+	attack  9 77 14 30 20 1
+	frame	data/chars/spear/a102.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/spear/a101.gif
+
+
+

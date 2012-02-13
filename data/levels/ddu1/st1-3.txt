@@ -1,0 +1,142 @@
+music		data/music/arrange/dd2st2.ogg
+bossmusic	data/music/1boss.ogg
+background	data/bgs/park/1-3b.gif
+panel		data/bgs/park/1-3p.gif
+#frontpanel	data/bgs/ddragonx/stage3-1/f01.gif
+order	a
+bgspeed  1
+
+
+
+
+#-------1
+
+
+group   1 4
+at      0
+
+spawn    Jeff
+health   100
+map      2
+coords   -50 170
+at       0
+
+spawn    Jeff
+health   100
+map      2
+coords   -50 190
+at       0
+
+spawn    Jeff
+health   100
+map      2
+coords   350 210
+at       0
+
+spawn    Jeff
+health   100
+map      2
+coords   350 230
+at       0
+
+#-------2
+
+group   4 4
+at      0
+
+spawn    mcguire
+health   280
+boss     1
+coords   350 170
+at       0
+
+spawn    Roper2
+alias    Roper
+map      1
+health   50
+coords   350 190
+at       0
+
+spawn    Roper
+alias    Roper
+map      1
+health   50
+coords   -5 210
+at       0
+
+
+
+
+spawn    williams
+map      6
+health   50
+coords   -30 180
+at       0
+
+spawn    Roper
+map      5
+health   50
+coords   350 190
+at       0
+
+spawn    jeff
+#map      5
+health   50
+coords   -40 200
+at       0
+
+spawn    Roper3
+item    knife2
+map     1
+coords   350 200
+at       0
+
+spawn    linda3
+map      4
+item     bomb1
+health   50
+coords   -50 230
+at       0
+
+spawn    Roper
+health   50
+coords   350 190
+at       0
+
+spawn    williams
+map      3
+health   50
+coords   -50 190
+at       0
+
+spawn    linda
+map      2
+health   50
+coords   350 230
+at       0
+
+spawn    williams
+coords   -50 210
+health   50
+at       0
+
+spawn    Roper
+map      1
+health   50
+coords   350 200
+at       0
+
+spawn    williams
+map      2
+health   50
+coords   -50 230
+at       0
+
+#-------3
+
+
+
+
+
+
+

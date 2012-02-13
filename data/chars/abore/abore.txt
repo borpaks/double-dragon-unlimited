@@ -1,0 +1,172 @@
+name	Abore
+health	150
+speed	7
+type	enemy
+shadow	1
+paingrab  1
+diesound data/sounds/die8.wav
+aggression 20
+icon	data/chars/abore/icon.gif
+nolife        1
+jumpheight 3 
+candamage player npc
+hostile player npc
+
+remap   data/chars/abore/wk1.gif   data/chars/abore/alter.gif
+remap   data/chars/abore/wk4.gif   data/chars/abore/alter2.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	70 132
+	bbox	53 47 31 86
+	frame	data/chars/abore/wk1.gif
+
+
+anim walk
+	loop	1
+	delay	20
+	offset	70 132
+	bbox	53 47 31 86
+	frame	data/chars/abore/wk2.gif
+	frame	data/chars/abore/wk3.gif
+	frame	data/chars/abore/wk4.gif
+	frame	data/chars/abore/wk5.gif
+	frame	data/chars/abore/wk6.gif
+	frame	data/chars/abore/wk7.gif
+	frame	data/chars/abore/wk8.gif
+	frame	data/chars/abore/wk1.gif
+
+
+anim attack1
+	range   0 30
+	loop	0
+	delay	10
+	offset	70 132
+	bbox	53 47 31 86
+	sound   data/sounds/att4.wav
+	frame	data/chars/abore/a104.gif
+	attack  83 58 31 38 15
+	frame	data/chars/abore/a105.gif
+	attack  0 0 0 0 0
+	frame	data/chars/abore/a106.gif
+	delay   18
+	frame	data/chars/abore/a101.gif
+	delay   10
+	frame	data/chars/abore/a102.gif
+	attack  83 58 31 38 15 1
+	frame	data/chars/abore/a103.gif
+	attack  0 0 0 0 0 0
+	delay   18
+	frame	data/chars/abore/a104.gif
+
+
+anim attack2
+	range   0 60
+	loop	0
+	delay	15
+	offset	70 132
+	bbox	53 47 31 86
+	sound   data/sounds/att4.wav
+	frame	data/chars/abore/rise1.gif
+	move    3
+	delay   2
+	frame	data/chars/abore/rise2.gif
+	frame	data/chars/abore/rise2.gif
+	frame	data/chars/abore/rise2.gif
+	frame	data/chars/abore/rise2.gif
+	move    0
+	attack  68 52 35 76 22 1
+	delay   20
+	frame	data/chars/abore/a201.gif
+	
+
+
+anim pain
+	loop	0
+	offset	70 132
+	bbox	53 47 31 86
+        delay   27
+	frame	data/chars/abore/pain.gif
+
+anim pain2
+	loop	0
+	delay	30
+	offset	42 183
+	bbox	52 70 20 61
+	jumpframe 0
+        frame	data/chars/abore/fall2.gif
+        delay   17
+        frame	data/chars/abore/fall1.gif
+
+anim pain3
+	loop	0
+	offset	70 132
+	bbox	53 47 31 86
+        delay   50
+	frame	data/chars/abore/pain.gif
+
+
+
+
+anim pain4
+	 loop       0
+	 delay      2
+	 offset     62 133
+	 bbox       52 70 20 61
+	 move       -3
+         frame      data/chars/abore/pain.gif
+         frame      data/chars/abore/pain.gif
+         frame      data/chars/abore/pain.gif
+         frame      data/chars/abore/pain.gif
+	 move       0
+	 delay      50
+         frame      data/chars/abore/pain.gif
+
+anim fall
+	loop	0
+	offset	70 132
+	delay   60
+        attack  50 51 22 61 5 1
+	frame	data/chars/abore/fall1.gif
+        delay   20
+	frame	data/chars/abore/fall2.gif
+        attack  0 0 0 0 0
+	frame	data/chars/abore/fall3.gif
+
+anim fall2
+	loop	0
+	offset	70 132
+	delay   60
+        attack  50 51 22 61 5 1
+	bbox    42 108 46 23
+        jumpframe 0 4 0 0
+        move    -8
+        frame	data/chars/abore/fall1.gif
+        delay   20
+	frame	data/chars/abore/fall2.gif
+        attack  0 0 0 0 0
+	move    0
+        frame	data/chars/abore/fall3.gif
+
+anim fall
+	loop	0
+	offset	70 132
+	delay   60
+        bbox    42 108 46 23
+	frame	data/chars/abore/fall1.gif
+        delay   20
+	frame	data/chars/abore/fall2.gif
+        attack  0 0 0 0 0
+	frame	data/chars/abore/fall3.gif
+
+anim rise
+	loop	0
+	delay	20
+	offset	70 132
+	frame	data/chars/abore/rise1.gif
+	frame	data/chars/abore/rise2.gif
+
+
+
+

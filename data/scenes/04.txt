@@ -1,0 +1,2 @@
+music	        data/music/inter2.ogg 1
+animation	data/scenes/stb2.gif 0 0

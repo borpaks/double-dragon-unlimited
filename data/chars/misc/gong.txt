@@ -1,0 +1,12 @@
+name	gong
+type	trap
+shadow	0
+
+anim idle
+	loop	0
+	delay	0
+	offset	0 0
+	sound   data/sounds/gong.wav
+	frame	data/chars/misc/gong.gif
+
+

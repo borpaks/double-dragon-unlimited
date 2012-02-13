@@ -1,0 +1,21 @@
+name	Bulldozer
+type	trap
+icon	data/chars/statue/icon.gif
+
+anim idle
+	loop	1
+	delay	500
+	offset	154 155
+	frame	data/chars/bull/a101.gif
+	delay   15
+	sound   data/sounds/bull.wav
+	frame	data/chars/bull/a101.gif
+	attack  40 84 233 66 25 1
+	delay   50
+	frame	data/chars/bull/a102.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/bull/a101.gif
+
+
+
+

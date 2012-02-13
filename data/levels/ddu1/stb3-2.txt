@@ -1,0 +1,250 @@
+music		data/music/b3-2.ogg
+
+background	data/bgs/japan/b3-2p3.gif
+panel		data/bgs/japan/b3-2p3.gif
+spawn1 30 65
+spawn2 60 65
+order         a
+direction      right
+
+
+wall 559 150 -600 -600 0 0 100 300
+wall 597 166 -44 -44 0 0 100 300
+wall 1048 167 0 0 48 48 100 300
+wall 1089 155 0 0 500 500 100 300
+
+#-------1
+
+
+
+spawn   Spear
+coords  389 210
+at      0
+
+
+
+spawn   Spear
+coords  407 179
+at      0
+
+spawn   Spear
+coords  421 194
+at      0
+
+spawn   Spear
+coords  438 168
+at      0
+
+spawn   Spear
+coords  442 212
+at      0
+
+
+
+spawn   Spear
+coords  464 180
+at      0
+
+#spawn   Spear
+#coords  472 219
+#at      0
+
+spawn   Spear
+coords  481 167
+at      0
+
+#spawn   Spear
+#coords  490 198
+#at      0
+
+#spawn   Spear
+#coords  516 171
+#at      0
+
+
+group   1 4
+at      0
+
+wait
+at      0
+
+spawn	hong
+map     2
+health  200
+coords	380 200
+at	0
+
+spawn	williams
+map     2
+
+coords	400 170
+at	0
+
+spawn	roper2
+map     1
+alias   Roper
+
+coords	450 190
+at	0
+
+spawn	hong
+map     2
+health  200
+coords	380 200
+at	0
+
+
+#-------2
+
+group   4 4
+at      100
+
+spawn   roper
+map     5
+health  150 
+coords  380 170
+at      100
+
+spawn   Linda3
+map     4
+health  50
+item    bomb1
+coords  410 200
+at     100
+
+wait
+at      240
+
+spawn   jeff
+map     4
+health  150
+alias   Roper
+coords  -50 170
+at      240
+
+spawn   Williams
+map     6
+health  150
+coords  -50 170
+at      240
+
+#-------3
+
+group   1 2
+at      350
+
+wait
+at      430
+
+
+spawn   ninja
+health  180
+item    knife2
+coords  400 210
+at      350
+
+spawn   ninja
+map     1
+item    knife2
+coords  450 200
+at      350
+
+
+
+
+#-------4
+
+group   1 5
+at      550
+
+wait
+at      650
+
+spawn   kikucho
+
+health  100
+coords  380 170
+at      550
+
+spawn   kikucho 
+
+health  100
+coords  400 200
+at      550
+
+spawn   kikucho
+map     3
+health  100
+coords  350 170
+at      550
+
+
+spawn   kikucho
+map     1
+coords  -30 190
+at      550
+
+spawn   kikucho
+map     1
+coords  -50 200
+at      550
+
+
+
+
+#-------5
+
+group   1 2
+at      1000
+
+
+
+
+
+spawn   ninja
+#map     1
+alias   Roper
+item    knife2
+health  150
+coords  400 170
+at      1000
+
+spawn   ninja
+map     1
+item    knife2
+coords  380 200
+at      1000
+
+#-------6
+
+
+
+
+
+
+
+group    1 3
+at       1540
+
+spawn    hong
+health   200
+map      5
+coords   380 170
+at       1540
+
+spawn    hong
+health   200
+map      1
+coords   410 200
+at       1540
+
+spawn   abobo2 
+health  250
+map      1
+coords  -40 210
+at       1540
+
+
+
+
+

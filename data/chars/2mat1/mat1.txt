@@ -1,0 +1,421 @@
+name          Matrix1
+type          enemy
+health        100
+speed         9
+jumpheight    4
+grabdistance  10
+throw         2 3
+throwdamage   18
+shadow        0
+noquake       1
+nolife        1
+risetime      30
+paingrab      1
+diesound      data/sounds/die1.wav
+#projectilehit enemy obstacle
+candamage player npc
+hostile player npc
+remap    data/chars/2mat1/idle01.gif   data/chars/2mat1/map1.gif
+remap    data/chars/2mat1/idle01.gif   data/chars/2mat1/map2.gif
+remap    data/chars/2mat1/idle01.gif   data/chars/2mat1/map3.gif
+
+anim spawn
+	 loop       0
+	 delay      1
+	 offset     56 94
+	 bbox       46 40 22 51
+         frame      data/chars/2mat1/idle01.gif
+
+anim idle
+	 loop       1
+	 delay      20
+	 offset     56 94
+	 bbox       46 40 22 51
+         frame      data/chars/2mat1/idle01.gif
+	 delay      8
+         frame      data/chars/2mat1/idle02.gif
+         frame      data/chars/2mat1/idle01.gif
+         frame      data/chars/2mat1/idle02.gif
+	 delay      300
+         frame      data/chars/2mat1/idle01.gif
+
+anim walk
+	 loop       1
+	 delay      15
+	 offset     56 94
+	 bbox       46 40 22 51
+         frame      data/chars/2mat1/wk01.gif
+	 delay      20
+         frame      data/chars/2mat1/wk02.gif
+	 delay      15
+         frame      data/chars/2mat1/wk03.gif
+	 delay      20
+         frame      data/chars/2mat1/wk04.gif
+
+anim up
+	 loop       1
+	 delay      15
+	 offset     56 94
+	 bbox       46 40 22 51
+         frame      data/chars/2mat1/wk05.gif
+	 delay      20
+         frame      data/chars/2mat1/wk06.gif
+	 delay      15
+         frame      data/chars/2mat1/wk07.gif
+	 delay      20
+         frame      data/chars/2mat1/wk08.gif
+
+anim attack1
+	 range      5 43
+	 loop       0
+	 delay      18
+	 offset     56 94
+	 bbox       46 40 22 51
+	 followanim 2
+	 followcond 3
+	 fastattack 1
+	 hitfx      data/sounds/beat1.wav
+         frame      data/chars/2mat1/a101.gif
+	 delay      5
+         frame      data/chars/2mat1/a102.gif
+	 delay      6
+	 attack     69 45 32 11 4 0 0 0 13
+         frame      data/chars/2mat1/a103.gif
+	 delay      12
+	 attack     0 0 0 0
+         frame      data/chars/2mat1/a201.gif
+
+anim follow2
+	 loop       0
+	 delay      9
+	 offset     56 94
+	 bbox       46 40 22 51
+	 fastattack 1
+	 jumpframe  16 2
+	 sound      data/sounds/beat1.wav
+	 attack     0 0 0 0
+         frame      data/chars/2mat1/a103.gif
+	 delay      5
+	 attack     0 0 0 0
+         frame      data/chars/2mat1/a201.gif
+	 delay      7
+	 attack2    69 45 32 11 4 0 0 0 13
+         frame      data/chars/2mat1/a202.gif
+	 delay      5
+	 attack2    0 0 0 0
+         frame      data/chars/2mat1/a102.gif
+	 delay      7
+	 attack     69 45 32 11 4 0 0 0 13
+         frame      data/chars/2mat1/a103.gif
+	 delay      5
+	 attack     0 0 0 0
+         frame      data/chars/2mat1/a201.gif
+	 delay      7
+	 attack9    69 45 32 11 4 0 0 0 13
+         frame      data/chars/2mat1/a202.gif
+	 delay      18
+	 attack9    0 0 0 0
+         frame      data/chars/2mat1/a101.gif
+	 delay      5
+         frame      data/chars/2mat1/b101.gif
+         frame      data/chars/2mat1/b102.gif
+	 delay      20
+	 attack2    73 54 41 17 4 0 0 0 13
+         frame      data/chars/2mat1/b103.gif
+	 delay      8
+	 attack2    0 0 0 0
+         frame      data/chars/2mat1/b201.gif
+	 delay      20
+         frame      data/chars/2mat1/b202.gif
+	 delay      6
+	 attack9    73 45 35 23 4 0 0 0 13
+         frame      data/chars/2mat1/b203.gif
+	 attack9    0 0 0 0
+         frame      data/chars/2mat1/b204.gif
+	 delay      18
+         frame      data/chars/2mat1/b205.gif
+	 delay      7
+         frame      data/chars/2mat1/ju1.gif
+	 delay      19
+	 attack     62 51 36 18 5 1 1 0 13
+         frame      data/chars/2mat1/ju2.gif
+	 delay      12
+	 attack     0 0 0 0 
+         frame      data/chars/2mat1/ju3.gif
+	 delay      18
+         frame      data/chars/2mat1/rise.gif
+
+anim attack2
+	 range      44 65
+	 loop       0
+	 delay      10
+	 offset     56 94
+	 bbox       46 40 22 51
+	 jumpframe  1 2
+         frame      data/chars/2mat1/rise.gif
+	 delay      7
+         frame      data/chars/2mat1/ju1.gif
+	 delay      19
+	 attack     62 51 36 18 5 1 1 0 13
+         frame      data/chars/2mat1/ju2.gif
+	 delay      12
+	 attack     0 0 0 0 
+         frame      data/chars/2mat1/ju3.gif
+	 delay      18
+         frame      data/chars/2mat1/rise.gif
+
+
+
+anim grabbed
+	 loop       0
+	 delay      5
+	 offset     54 94
+	 bbox       45 36 22 56
+         frame      data/chars/2mat1/gp3.gif
+         frame      data/chars/2mat1/gp1.gif
+
+anim spain
+	 loop       0
+	 delay      15
+	 offset     54 94
+	 bbox       45 36 22 56
+         frame      data/chars/2mat1/gp2.gif
+	 delay      8
+         frame      data/chars/2mat1/gp3.gif
+
+anim bpain
+	 loop       0
+	 delay      1
+	 offset     54 94
+	 jumpframe  1 2
+	 move       1
+         frame      data/chars/2mat1/fall5.gif
+	 delay      2
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+	 move       0
+	 delay      65
+#	 sound      data/sounds/fall.wav
+         frame      data/chars/2mat1/fall7.gif
+	 delay      13
+         frame      data/chars/2mat1/rise.gif
+
+anim burn
+	 loop       0
+	 delay      50
+	 offset     54 94
+         frame      data/chars/2mat1/fall5.gif
+	 delay      10
+         frame      data/chars/2mat1/fall2.gif
+         frame      data/chars/2mat1/fall3.gif
+         frame      data/chars/2mat1/fall4.gif
+
+anim pain
+	 loop       0
+	 delay      22
+	 offset     56 94
+	 bbox       46 40 22 51
+         frame      data/chars/2mat1/pain1.gif
+
+anim pain2
+	 loop       0
+	 delay      32
+	 offset     36 134
+	 bbox       20 60 70 51
+         jumpframe  0
+         frame      data/chars/2mat1/fall3.gif
+	 move       0
+	 delay      50
+         frame      data/chars/2mat1/fall2.gif
+
+anim pain3
+	 loop       0
+	 delay      50
+	 offset     56 94
+	 bbox       46 40 22 51
+         frame      data/chars/2mat1/pain3.gif
+
+
+anim pain6
+	 loop       0
+	 delay      1
+	 offset     54 94
+	 bbox       45 36 22 56
+	 jumpframe  1
+#         frame      data/chars/2wilim/gp1.gif
+	 offset     25 145
+	 delay      30
+	 bbox       0 0 0 0
+         frame      data/chars/2mat1/fall3.gif
+	 offset     25 140
+	 delay      17
+	 bbox       45 36 22 56
+         frame      data/chars/2mat1/fall2.gif
+
+anim pain4
+	 loop       0
+	 delay      2
+	 offset     56 94
+	 bbox       42 50 30 81
+	 move       -3
+         frame      data/chars/2mat1/pain3.gif
+         frame      data/chars/2mat1/pain3.gif
+         frame      data/chars/2mat1/pain3.gif
+         frame      data/chars/2mat1/pain3.gif
+	 move       0
+	 delay      50
+         frame      data/chars/2mat1/pain3.gif
+
+anim pain6
+	 loop       0
+	 delay      2
+	 offset     56 94
+	 bbox       46 40 22 51
+	 move       -6
+	 attack     46 38 12 51 5 1 0 0 8
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+	 move       -4
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+	 move       -2
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+	 move       -1
+	 attack     0 0 0 0
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/fall5.gif
+         frame      data/chars/2mat1/rise.gif
+         frame      data/chars/2mat1/rise.gif
+         frame      data/chars/2mat1/rise.gif
+         frame      data/chars/2mat1/rise.gif
+         frame      data/chars/2mat1/rise.gif
+	 move       0
+	 delay      40
+	 bbox       0 0 0 0
+         frame      data/chars/2mat1/rise.gif
+
+anim pain5
+	 loop       0
+	 delay      52
+	 offset     56 94
+	 bbox       46 40 22 51
+         frame      data/chars/2mat1/pain3.gif
+
+anim fall
+	 loop       0
+	 delay      50
+	 offset     56 94
+	 attack     40 52 32 30 5 1 0 0 13
+         frame      data/chars/2mat1/fall1.gif
+	 delay      10
+         frame      data/chars/2mat1/fall2.gif
+	 attack     0 0 0 0
+         frame      data/chars/2mat1/fall3.gif
+         frame      data/chars/2mat1/fall4.gif
+
+anim fall2
+	 loop       0
+	 delay      50
+	 offset     56 94
+	 attack     40 52 32 30 5 1 0 0 13
+         bbox       36 49 57 57
+         jumpframe 0 4 0 0
+         move       -4
+         frame      data/chars/2mat1/fall1.gif
+	 delay      10
+         frame      data/chars/2mat1/fall2.gif
+	 attack     0 0 0 0
+         frame      data/chars/2mat1/fall3.gif
+         move       0
+         frame      data/chars/2mat1/fall4.gif
+
+anim fall4
+	 loop       0
+	 delay      50
+	 offset     56 94
+	 bbox       36 49 57 57
+         frame      data/chars/2mat1/fall1.gif
+	 delay      10
+         frame      data/chars/2mat1/fall2.gif
+	 attack     0 0 0 0
+         frame      data/chars/2mat1/fall3.gif
+         frame      data/chars/2mat1/fall4.gif
+
+anim fall6
+	 loop       0
+	 delay      10
+	 offset     56 94
+	 bbox       46 42 28 32
+	 attack     40 37 39 44 5 1 1 0 8
+         frame      data/chars/2mat1/fall8.gif
+         frame      data/chars/2mat1/fall9.gif
+         frame      data/chars/2mat1/falla.gif
+         frame      data/chars/2mat1/fall1.gif
+         frame      data/chars/2mat1/fall8.gif
+         frame      data/chars/2mat1/fall9.gif
+         frame      data/chars/2mat1/falla.gif
+         frame      data/chars/2mat1/fall1.gif
+	 attack     0 0 0 0
+	 bbox       0 0 0 0
+         frame      data/chars/2mat1/fall2.gif
+         frame      data/chars/2mat1/fall3.gif
+         frame      data/chars/2mat1/fall4.gif
+
+anim fall7
+	 loop       0
+	 delay      1
+	 offset     56 94
+	 bbox       46 40 22 51
+	 jumpframe  1 5
+	 flipframe  1
+         frame      data/chars/2mat1/fall1.gif
+	 delay      49
+         frame      data/chars/2mat1/fall1.gif
+         frame      data/chars/2mat1/fall2.gif
+	 delay      25
+         frame      data/chars/2mat1/fall3.gif
+	 bbox       0 0 0 0
+         frame      data/chars/2mat1/fall4.gif
+
+anim rise
+	 loop       0
+	 delay      20
+	 offset     56 94
+         frame      data/chars/2mat1/fall4.gif
+         frame      data/chars/2mat1/rise.gif
+
+

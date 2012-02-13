@@ -1,0 +1,193 @@
+music		data/music/2-1.ogg
+bossmusic	data/music/arcade/abore.ogg
+background	data/bgs/subway/2-1p2.gif
+panel		data/bgs/subway/2-1p2.gif
+frontpanel	data/bgs/subway/2-1f.gif
+order           a
+direction       right
+wall 90 175 -90 -90 0 0 50 300
+
+spawn1 50 46
+spawn2 100 46
+#-------1
+spawn	jimmy
+health  100
+map     1
+flip    1
+coords	100 179
+at      0
+
+spawn	sonny
+health  100
+map     1
+flip    1
+coords	130 179
+at      0
+
+spawn	drum
+health  5
+item    bomb1
+coords	752 142
+at      0
+
+spawn	drum
+health  5
+item    mbox
+coords	800 142
+at      0
+
+spawn	drum
+health  5
+item    money
+coords	990 195
+at      0
+
+group   3 3
+at      50
+
+spawn	oharra
+map     1
+
+coords	400 160
+at	50
+
+spawn	oharra
+
+
+coords	400 160
+at	50
+
+spawn	Roper2
+map     1
+alias   Roper
+health  50
+coords	410 205
+at	50
+
+wait
+at      155
+
+spawn   Williams
+map     3
+coords  380 160
+at      155
+
+spawn   Roper
+coords  -80 200
+at      155
+
+#-------2
+
+group   4 4
+at      280
+
+spawn    roper2
+alias    Roper
+map      1
+coords   380 200
+at       280
+
+spawn    roper2
+alias    Roper
+map      1
+coords   400 170
+at       280
+
+wait
+at       400
+
+
+spawn    Williams
+map      1
+coords   -60 200
+at       400
+
+spawn    Linda2
+alias    Linda
+coords   -50 170
+at       400
+
+spawn    Roper
+map      4
+coords   380 200
+at       400
+
+#-------3
+
+group    4 4
+at       600
+
+spawn	 matrix1
+#map      1
+coords	 400 160
+at	 600
+
+spawn    Linda
+map      2
+coords   -30 200
+at       600
+
+spawn	 matrix1
+#map      1
+alias    Roper
+coords	 380 200
+at	 600
+
+spawn    Linda
+map      2
+coords   -50 170
+at       600
+
+wait
+at       889
+
+spawn    Linda2
+alias    Linda
+coords   380 200
+at       889
+
+spawn    williams
+coords   -50 200
+at       889
+
+spawn    roper2
+alias    Roper
+map      1
+coords   -50 170
+at       889
+
+
+#-------4
+
+group    4 4
+at       1095
+
+spawn    burnov
+health   300
+map      1
+coords   -30 200
+at       1095
+
+spawn    burnov
+map       1
+alias    Roper
+coords   300 170
+at       1095
+
+spawn    Roper3
+alias    Roper
+map      1
+coords   -60 200
+at       1095
+
+
+
+
+
+
+
+
+
+
+
+

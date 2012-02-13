@@ -1,0 +1,209 @@
+name	Mibobo
+health	120
+speed	8
+type	enemy
+shadow	1
+paingrab 1
+grabdistance 28
+diesound data/sounds/die6.wav
+nolife        1
+icon	data/chars/mibobo/icon.gif
+candamage player npc
+hostile player npc
+jumpheight 3 
+
+anim idle
+	loop	1
+	delay	10
+	offset	66 132
+	bbox	53 62 26 69
+	frame	data/chars/mibobo/wk1.gif
+
+
+anim walk
+	loop	1
+	delay	15
+	offset	65 132
+	bbox	53 62 26 69
+	frame	data/chars/mibobo/wk1.gif
+	frame	data/chars/mibobo/wk2.gif
+	frame	data/chars/mibobo/wk3.gif
+	frame	data/chars/mibobo/wk4.gif
+
+
+anim attack1
+	range   0 30
+	loop	0
+	delay	7
+	offset	66 132
+	bbox	53 62 26 69
+	sound   data/sounds/att2.wav
+	frame	data/chars/mibobo/a101.gif
+	attack  74 71 38 25 10
+	delay   10
+	frame	data/chars/mibobo/a102.gif
+	attack  0 0 0 0 0
+  	delay   7
+	frame	data/chars/mibobo/a103.gif
+	attack  74 71 38 25 10
+	delay   10
+	frame	data/chars/mibobo/a104.gif
+	attack  0 0 0 0 0
+	delay   7
+	frame	data/chars/mibobo/a105.gif
+	frame	data/chars/mibobo/a101.gif
+	attack  74 71 38 25 10 1
+	delay   10
+	frame	data/chars/mibobo/a102.gif
+	delay   8
+	attack  0 0 0 0 0
+	frame	data/chars/mibobo/a103.gif
+
+
+anim attack2
+	range   0 30
+	loop	0
+	delay	8
+	offset	66 132
+	bbox	53 62 26 69
+	frame	data/chars/mibobo/a201.gif
+	frame	data/chars/mibobo/a202.gif
+	frame	data/chars/mibobo/a203.gif
+        attack  74 71 38 25 25 1
+        delay   22
+	frame	data/chars/mibobo/a204.gif
+	attack  0 0 0 0 0 0
+	delay   10
+	frame	data/chars/mibobo/a203.gif
+	frame	data/chars/mibobo/a202.gif
+	frame	data/chars/mibobo/a201.gif
+
+
+anim grab
+	range   0 40
+	loop	0
+	delay	7
+	offset	66 132
+	bbox	53 62 26 69
+	sound   data/sounds/att3.wav
+	frame	data/chars/mibobo/a101.gif
+	attack  74 71 38 25 10
+	delay   10
+	frame	data/chars/mibobo/a102.gif
+	attack  0 0 0 0 0
+  	delay   7
+	frame	data/chars/mibobo/a103.gif
+	attack  74 71 38 25 10
+	delay   10
+	frame	data/chars/mibobo/a104.gif
+	attack  0 0 0 0 0
+	delay   7
+	frame	data/chars/mibobo/a105.gif
+	frame	data/chars/mibobo/a101.gif
+	attack  74 71 38 25 10 1
+	delay   10
+	frame	data/chars/mibobo/a102.gif
+	delay   7
+	attack  0 0 0 0 0
+	frame	data/chars/mibobo/a103.gif
+
+
+anim pain
+	loop	0
+	delay	8
+	offset	66 132
+	bbox	53 62 26 69
+	frame	data/chars/mibobo/pain1.gif
+        
+
+anim pain2
+	loop	0
+	delay	30
+	offset	42 183
+	bbox	52 70 20 61
+	jumpframe 0
+        frame	data/chars/mibobo/fall3.gif
+        delay   17
+        frame	data/chars/mibobo/fall2.gif
+
+anim pain3
+	loop	0
+	delay	8
+	offset	66 132
+	bbox	53 62 26 69
+	frame	data/chars/mibobo/pain1.gif
+        delay   40
+        frame	data/chars/mibobo/pain2.gif
+
+
+anim pain4
+	 loop       0
+	 delay      2
+	 offset     62 133
+	 bbox       52 70 20 61
+	 move       -3
+         frame      data/chars/mibobo/pain2.gif
+         frame      data/chars/mibobo/pain2.gif
+         frame      data/chars/mibobo/pain2.gif
+         frame      data/chars/mibobo/pain2.gif
+	 move       0
+	 delay      50
+         frame      data/chars/mibobo/pain2.gif
+
+anim fall
+	loop	0
+	offset	66 132
+	delay   10
+        attack  58 71 13 35 5 1
+	frame	data/chars/mibobo/fall1.gif
+	delay   50
+        attack  40 81 28 29 5 1
+	frame	data/chars/mibobo/fall2.gif
+        delay   20
+        attack  0 0 0 0 0
+	frame	data/chars/mibobo/fall3.gif
+	frame	data/chars/mibobo/fall4.gif
+
+anim fall2
+	loop	0
+	offset	66 132
+	
+        attack  58 71 13 35 5 1
+	jumpframe 0 4 0 0
+        move    -8
+        bbox    42 108 46 23
+	delay   50
+        attack  40 81 28 29 5 1
+	frame	data/chars/mibobo/fall2.gif
+        delay   20
+        attack  0 0 0 0 0
+	frame	data/chars/mibobo/fall3.gif
+	move    0
+        frame	data/chars/mibobo/fall4.gif
+
+anim fall4
+	loop	0
+	offset	66 132
+	delay   10
+         bbox    42 108 46 23
+	frame	data/chars/mibobo/fall1.gif
+	delay   50
+        attack  40 81 28 29 5 1
+	frame	data/chars/mibobo/fall2.gif
+        delay   20
+        attack  0 0 0 0 0
+	frame	data/chars/mibobo/fall3.gif
+	frame	data/chars/mibobo/fall4.gif
+
+anim rise
+	loop	0
+	delay	20
+	offset	66 132
+	frame	data/chars/mibobo/rise.gif
+
+
+
+
+
+
+

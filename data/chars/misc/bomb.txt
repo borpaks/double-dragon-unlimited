@@ -1,0 +1,61 @@
+name	 Bomb
+health   0
+type     enemy
+shadow	0
+
+jumpheight 3
+speed    10
+#weaploss 1
+
+anim idle
+	loop   0
+	offset 2 36
+	bbox   5 8 14 8
+	delay  20
+ 
+        frame  data/chars/misc/bomb1.gif
+#        movez  10
+        frame  data/chars/misc/bomb1.gif
+
+anim attack1
+        loop   0
+	offset 60 142
+#	bbox   5 8 14 8
+	delay  2
+        quakeframe 1 3 3
+        sound   data/sounds/fire.wav
+        frame  data/chars/misc/bomb2.gif
+        frame  data/chars/misc/bomb3.gif
+        blast  37 50 45 85 60 1
+        frame  data/chars/misc/bomb4.gif
+        frame  data/chars/misc/bomb5.gif
+        frame  data/chars/misc/bomb6.gif
+        frame  data/chars/misc/bomb7.gif
+        frame  data/chars/misc/bomb8.gif
+        blast  0
+        frame  data/chars/misc/bomb9.gif
+        frame  data/chars/misc/bomb10.gif
+        frame  data/chars/misc/bomb11.gif
+        frame  data/chars/misc/bomb12.gif
+
+anim attack2
+        loop   0
+	offset 60 142
+#	bbox   5 8 14 8
+	delay  2
+        quakeframe 1 3 3
+        sound   data/sounds/fire.wav
+        frame  data/chars/misc/bomb2.gif
+        frame  data/chars/misc/bomb3.gif
+        blast  37 50 45 85 60 1
+        frame  data/chars/misc/bomb4.gif
+        frame  data/chars/misc/bomb5.gif
+        frame  data/chars/misc/bomb6.gif
+        frame  data/chars/misc/bomb7.gif
+        frame  data/chars/misc/bomb8.gif
+        blast  0
+        frame  data/chars/misc/bomb9.gif
+        frame  data/chars/misc/bomb10.gif
+        frame  data/chars/misc/bomb11.gif
+        frame  data/chars/misc/bomb12.gif
+                

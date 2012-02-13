@@ -1,0 +1,16 @@
+#	music		[path] [loop]		# BOR file to play
+#	animation	[path] [x] [y]		# GIF animation to play
+#	silence					# Stop music
+
+
+music           data/music/credits.ogg
+animation	data/scenes/credits/ddu_0.gif 0 0
+animation	data/scenes/credits/ddu_011.gif 0 0
+animation	data/scenes/credits/ddu_013.gif 0 0
+animation	data/scenes/credits/ddu_012.gif 0 0
+animation	data/scenes/credits/ddu_014.gif 0 0
+animation	data/scenes/credits/ddu_015.gif 0 0
+animation	data/scenes/credits/ddu_016.gif 0 0
+animation	data/scenes/credits/ddu_017.gif 0 0
+animation	data/scenes/credits/ddu_018.gif 0 0
+animation	data/scenes/credits/ddu_019.gif 0 0

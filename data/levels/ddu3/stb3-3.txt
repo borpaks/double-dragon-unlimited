@@ -1,0 +1,66 @@
+music		data/music/remix.ogg
+bossmusic	data/music/dopelin.ogg
+background	data/bgs/japan/b3-3p.gif
+panel		data/bgs/japan/b3-3p.gif
+#frontpanel	data/bgs/ddragonx/stage3-1/f01.gif
+order	a
+
+
+
+
+
+
+#-------1
+spawn	jimmy
+health  130
+map     1
+coords	100 180
+at      0
+
+spawn	sonny
+health  130
+map     1
+coords	100 180
+at      0
+
+group   1 1
+at      0
+
+spawn    raymond
+health   250
+
+coords   256 154
+at       0
+
+
+#-------2
+
+group   3 3
+at      0
+
+spawn   Doppelganger
+health   450
+boss     1
+map      1
+coords   160 120
+at       0
+
+
+
+spawn    Doppelganger
+boss     1
+health   450
+map      1
+coords   108 120
+at       0
+
+
+
+
+spawn    Doppelganger
+boss     1
+health   450
+map      1
+coords   213 120
+at       0
+

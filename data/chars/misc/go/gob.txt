@@ -1,0 +1,14 @@
+name	GOb
+type	endlevel
+branch	GOB
+shadow	0
+
+anim idle
+	loop	1
+	delay	10
+	offset	78 49
+	bbox	55 0 40 70
+	frame	DATA/chars/misc/GO/GO5.gif
+	frame	DATA/chars/misc/GO/GO6.gif
+	frame	DATA/chars/misc/GO/GO7.gif
+	frame	DATA/chars/misc/GO/GO8.gif
