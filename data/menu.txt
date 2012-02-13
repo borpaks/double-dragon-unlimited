@@ -1,0 +1,5 @@
+renamekey attack attack
+disablekey attack2
+disablekey attack3
+disablekey attack4
+
